@@ -1,8 +1,8 @@
 /* 最新消息 */
 .news_main{
     position: relative;
-    width: 1000px;
-    height: 1500px;
+    width: 1200px;
+    height: 1200px;
     margin: 0 auto;
 }
 .news_pic>img{
@@ -14,69 +14,49 @@
 .news1 {
     display: block;
     object-fit: cover;
-    width: 370px;
-    height: 400px;
+    width: 320px;
+    height: 350px;
     clip-path: polygon(50% 0%, 0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%);
-    left: 50px;
-    top: 200px;
+    left: 280px;
+    top:340px;
 }
 .news2 {
     display: block;
     object-fit: cover;
-    width: 370px;
-    height: 400px;
+    width: 320px;
+    height: 350px;
     clip-path: polygon(50% 0%, 0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%);
-    left: 715px;
-    top: 575px;
+    left: 600px;
+    top:340px;
 }
 .news3 {
     display: block;
     object-fit: cover;
-    width: 370px;
-    height: 400px;
+    width: 320px;
+    height: 350px;
     clip-path: polygon(50% 0%, 0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%);
-    left: 50px;
-    top: 950px;
+    left:440px;
+    top:603px;
 }
-
 .shape1{
-    background-color: #F4AD41;
-    width: 470px;
-    height: 500px;
-    clip-path: polygon(50% 0%, 0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%);
-    left:450px;
-    top: 150px;
+    width:260px;
+    top:410px;
+    left: 10px;
 }
 .shape2{
-    background-color: #E37728;
-    width: 470px;
-    height: 500px;
-    clip-path: polygon(50% 0%, 0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%);
-    left:215px;
-    top: 525px;
+    width: 260px;
+    top:410px;
+    left: 940px;
 }
 .shape3{
-    background-color: #F4AD41;
-    width: 470px;
-    height: 500px;
-    clip-path: polygon(50% 0%, 0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%);
-    left:450px;
-    top: 900px;
+    width: 260px;
+    top:700px;
+    left: 155px;
 }
-.shape1>p,.shape2>p,.shape3>p{
+.news_shape p{
     color: white;
-    padding: 150px 100px 100px;
-    font-size: 32px;
-}
-.shape1:hover{
-    background-color:#F1C582 ;  
-}
-.shape3:hover{
-    background-color:#F1C582 ;
-}
-.shape2:hover{
-    background-color:#F89F5F ;
+    font-size: 28px;
 }
 .news_shape p:hover{
-    color: gray;
+    color: #F4AD41;
 }
