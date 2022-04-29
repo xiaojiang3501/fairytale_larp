@@ -27,12 +27,12 @@ body{
     margin-top: -250px;
   } 
 /* nav */
-/* .nav_out{
+.nav_out{
     position: fixed;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.01);
     z-index: 1;
-} */
+}
 .nav{    
      display: flex;
      justify-content: space-around;
