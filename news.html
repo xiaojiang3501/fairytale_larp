@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/LOGO.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/rwd.css">
+      <!-- jQuery  -->
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    <title>最新消息</title>
+</head>
+<body>
+      <!-- 載入畫面 -->
+      <div id="preloader">
+        <div id="status"><img src="./img/LOGO.gif"/></div>
+    </div>
+
+        <!-- nav -->
+        <nav class="nav">
+            <a href="index.html"><img src="./img/LOGO.png" alt="" /></a>
+            <ul>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a class="nav_yellow" href="news.html">最新消息</a></li>
+                <li><a href="product.html">劇本主題</a></li>
+                <li><a href="reservation.html">線上預約</a></li>
+                <li><a href="Q&A.html">Q&A</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+            </ul>
+        </nav>
+
+
+    <section class="news_main">
+        <section class="news_pic">
+        <img src="./img/HB.jpg" alt="" class="news1">
+        <img src="./img/ST.jpg" alt="" class="news2">
+        <img src="./img/PD.jpg" alt="" class="news3">
+        </section>
+
+        <section class="news_shape">
+            <div class="shape1">
+                <p>只要秀出身分證進行核實，當日壽星即可遊玩任意劇本免費，每人優惠只限一次。</p>
+            </div>
+            <div class="shape2">
+                <p>全員學生遊玩劇本優惠8折，需要全員都是學生並示出學生證優惠只到2022/12/31</p>
+            </div>
+            <div class="shape3">
+                <p>來玩我們劇本後，FB和IG打卡拍照即可收到小禮物，每人限領一次。</p>
+            </div>
+
+        </section>
+
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <section class="fo-top">
+        <article>
+            <h1>
+            童話故事LARP股份有限公司<br> 
+            台北市中山區南京東路三段219號5樓<br>
+            fairy_tale_larp@gmail.com<br>
+            02-12345678
+            </h1>
+        </article>
+        <article class="fo_logo">
+            <a class="FB" href="https://www.facebook.com/"></a>
+            <a class="IG" href="https://www.instagram.com/"></a>
+
+        </article>
+        </section>
+
+        <article>
+            <p>本網站為緯育TibaMe前端設計工程師班第76期學員專題作品<br>
+                參考資源: 410檔案室、衛斯理LARP。
+            </p>
+        </article>
+    </footer>
+    <!-- 載入畫面 -->
+    <script>
+        $(window).load(function() { // 確認整個頁面讀取完畢再將這三個div隱藏起來
+    $("#status").delay(400).fadeOut(800); //delay --> 延遲幾秒才fadeOut
+    $("#preloader").delay(400).fadeOut(1000);
+    })
+    </script>  
+</body>
+</html>

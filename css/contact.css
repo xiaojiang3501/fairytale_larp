@@ -1,0 +1,81 @@
+/* 聯絡我們 */
+.contact_out{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.contact{
+    width:50%;
+    background-color: black;  
+}
+.con_main,.map{
+    width: 500px;
+    margin: 0 auto;   
+}
+.contact h1{
+    color:#F4AD41;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    font-size: 30px;
+}
+.contact p{
+    color: white;
+    font-size: 24px;
+    padding-bottom: 100px;  
+}
+.mail{
+    color: white;
+    background-image: url(../img/contact.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 50%;
+}
+.mail h2{
+    font-size: 40px;
+    text-align: center;
+    padding-top:30px;
+}
+.mail ul{
+    padding:10px 50px 20px;
+    
+}
+.mail li{
+    padding-bottom: 10px;
+    width: 400px;
+    margin: 0 auto;
+}
+.in{
+    opacity: .7;
+    width: 380px;
+    height: 15px;
+    padding: 10px;
+    
+}
+.mail h3{
+    font-size: 24px;
+    padding: 5px;
+}
+textarea{
+    opacity: .7;
+    width: 380px;
+    height:350px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.mail .bt{
+    display: block;
+    width: 150px;
+    height: 40px;
+    font-size: 24px;
+    color: white;
+    background:#3C3D3B;
+    border:0;
+    cursor:pointer;
+    border-radius: 5px;
+    margin: 0 auto;
+ 
+}

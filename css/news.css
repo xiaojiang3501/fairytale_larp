@@ -1,0 +1,82 @@
+/* 最新消息 */
+.news_main{
+    position: relative;
+    width: 1000px;
+    height: 1500px;
+    margin: 0 auto;
+}
+.news_pic>img{
+    position: absolute;
+}
+.news_shape>div{
+    position: absolute;
+}
+.news1 {
+    display: block;
+    object-fit: cover;
+    width: 370px;
+    height: 400px;
+    clip-path: polygon(50% 0%, 0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%);
+    left: 50px;
+    top: 200px;
+}
+.news2 {
+    display: block;
+    object-fit: cover;
+    width: 370px;
+    height: 400px;
+    clip-path: polygon(50% 0%, 0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%);
+    left: 715px;
+    top: 575px;
+}
+.news3 {
+    display: block;
+    object-fit: cover;
+    width: 370px;
+    height: 400px;
+    clip-path: polygon(50% 0%, 0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%);
+    left: 50px;
+    top: 950px;
+}
+
+.shape1{
+    background-color: #F4AD41;
+    width: 470px;
+    height: 500px;
+    clip-path: polygon(50% 0%, 0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%);
+    left:450px;
+    top: 150px;
+}
+.shape2{
+    background-color: #E37728;
+    width: 470px;
+    height: 500px;
+    clip-path: polygon(50% 0%, 0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%);
+    left:215px;
+    top: 525px;
+}
+.shape3{
+    background-color: #F4AD41;
+    width: 470px;
+    height: 500px;
+    clip-path: polygon(50% 0%, 0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%);
+    left:450px;
+    top: 900px;
+}
+.shape1>p,.shape2>p,.shape3>p{
+    color: white;
+    padding: 150px 100px 100px;
+    font-size: 32px;
+}
+.shape1:hover{
+    background-color:#F1C582 ;  
+}
+.shape3:hover{
+    background-color:#F1C582 ;
+}
+.shape2:hover{
+    background-color:#F89F5F ;
+}
+.news_shape p:hover{
+    color: gray;
+}

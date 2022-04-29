@@ -1,0 +1,99 @@
+/* 線上預約 */
+.reserve{
+    color: black;
+    width: 800px;
+    height: 1000px;
+    margin: 100px auto;
+    background:linear-gradient(to top, rgb(203, 237, 240) 0%, rgb(121, 208, 232) 100%); 
+    position: relative;
+}
+
+img{
+    width: 800px;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    z-index: 0;
+}
+form{
+    padding: 20px;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+}
+h1{
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bolder;
+}
+#re1{
+    width: 200px;
+    border-radius: 10px;
+    padding: 5px;
+}
+#re2{
+    width: 400px;
+    border-radius: 10px;
+    padding: 5px;
+}
+#se{
+    width: 220px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+.session{
+    display: flex;
+    padding-bottom: 60px;
+}
+
+#item1,#item2,#item3{
+    display: none;   
+}
+.item1,.item2,.item3{
+    display: block;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px; 
+    margin-right: 20px;
+    background-color: #F4AD41; 
+}
+.item1 h2{
+    align-items: center;
+}
+#item1:checked + .item1{
+    display: block;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #E37728;
+    padding: 10px; 
+}
+#item2:checked + .item2{
+    display: block;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #E37728;
+    padding: 10px; 
+}
+#item3:checked + .item3{
+    display: block;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #E37728;
+    padding: 10px; 
+}
+
+#btn{
+    margin: 0 auto;
+    display: block;
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 30px;
+    background-color: brown;
+    color: white;
+    border:0;
+    cursor:pointer;
+}
+      

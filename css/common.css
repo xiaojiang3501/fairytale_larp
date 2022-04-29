@@ -1,0 +1,125 @@
+@import url('reset.css');
+
+body{
+    font-family: Verdana;
+	line-height: 1.5;
+    background-color: #2B2C2A;
+}
+/* 載入畫面 */
+/*   這是整個會蓋住畫面的底色色塊  */
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    background-color: #2B2C2A;
+    z-index: 100;
+  } 
+  /*   這是中間loading的gif坐標css  */
+ #status {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top: -250px;
+  } 
+/* nav */
+/* .nav_out{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.01);
+    z-index: 1;
+} */
+.nav{    
+     display: flex;
+     justify-content: space-around;
+     width: 1200px;
+     margin: 0 auto;
+     opacity: 0;
+     animation: nav .3s .5s ease-out forwards;    
+}
+.nav img{
+    width: 100px;
+}
+.nav ul{
+    justify-content: flex-end;
+    display: flex;
+    margin-top: 35px;
+}
+.nav li{
+    margin-left: 20px;   
+}
+.nav li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin-left: 20px; 
+}
+.nav_yellow{
+    color: #F4AD41;
+}
+.nav li a:hover{
+	color: #F4AD41;
+}
+@keyframes nav {
+	0%{ transform: translateY(50px); opacity: 0; }
+	80%{ transform: translateY(-10px); opacity: 1; }
+	100%{ transform: translateY(0px); opacity: 1; }
+}
+/* nav漢堡 */
+.nav .fa-solid{
+    display: none;
+    color: white;
+}
+
+/* footer */
+footer{
+    color: white;
+    border-top: 5px solid white;
+    width: 1000px;
+    margin: 0 auto;
+}
+.fo-top{
+    display: flex;
+    justify-content: space-between; 
+}
+footer h1{   
+    font-size: 24px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.fo_logo{
+    padding-top: 50px;
+    display: flex;
+    width: 120px;
+}
+footer p{
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.FB{  
+    display: block; 
+    width: 50px;
+    background: url("../img/FB.png") no-repeat;
+    background-size: contain;
+    margin-right: 20px;
+}
+.IG{  
+    display: block; 
+    width: 50px;
+    background: url("../img/IG.png") no-repeat;
+    background-size: contain;   
+}
+.FB:hover{
+    background:url('../img/FB1.png') no-repeat;
+    background-size: contain;
+} 
+.IG:hover{
+    background:url('../img/IG1.png') no-repeat;
+    background-size: contain;
+} 
