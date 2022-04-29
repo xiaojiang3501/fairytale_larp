@@ -10,7 +10,7 @@
         margin-left: 10px;
       }
 
-    .nav .fa-solid{
+    .nav .fa-book{
         display: block;
         position: absolute;
         right: 0;
@@ -34,7 +34,7 @@
     .nav li{
         margin: 0;
     }
-    .nav .fa-solid:hover ~ ul{
+    .nav .fa-book:hover ~ ul{
         right: 0;
       }
 }

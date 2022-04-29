@@ -59,7 +59,10 @@ body{
     font-size: 24px;
     margin-left: 20px; 
 }
-.nav_yellow{
+.fa-user{
+    padding: 5px;
+}
+.nav .nav_yellow{
     color: #F4AD41;
 }
 .nav li a:hover{
@@ -71,7 +74,7 @@ body{
 	100%{ transform: translateY(0px); opacity: 1; }
 }
 /* nav漢堡 */
-.nav .fa-solid{
+.nav .fa-book{
     display: none;
     color: white;
 }
