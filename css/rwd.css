@@ -39,8 +39,6 @@
       }
 }
 
-
-
 /* footer */
 @media screen and (max-width:500px) {
     footer{
@@ -66,7 +64,6 @@
     
 }
 
-
 /* 關於我們 */
 @media screen and (max-width:500px) {
     .about{
@@ -91,22 +88,32 @@
     }
 }
 
-
 /* 最新消息 */
 @media screen and (max-width:500px) {
     
 }
 
-
 /* 劇本主題 */
 @media screen and (max-width:500px) {
-    
+    .product{
+        width: 100%;
+    }
+    .showcase-btn ul li{
+        margin: 0;
+    }
+    .case{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 
 /* 線上預約 */
 @media screen and (max-width:500px) {
-    
+    .cover{
+        width: 100%;
+    }
+
 }
 
 
@@ -121,6 +128,9 @@
     }
     .question>p{
         font-size:18px;
+    }
+    form{
+        
     }
 }
 

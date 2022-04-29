@@ -28,17 +28,18 @@
 .showcase-btn li:hover{
     background-color: #E37728;
 }
+.showcase-btn li:checked{
+    background-color: #E37728;
+}
 /* 下面 */
-.cases{
-    width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    
+ .cases{
+
 }
 .case-item{
     width: 200px;
     padding: 20px;  
     text-align: center;
+    cursor: pointer;
 }
 .case-item img{
     width: 100%;   
