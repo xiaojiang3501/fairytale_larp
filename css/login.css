@@ -7,11 +7,22 @@
 }
 body{
     height: 100vh;
-    background-color:rgb(38, 39, 47);
+    background-color:#2B2C2A;
     font-family: Arial,;
     justify-content: center;
     align-items: center;
     display: flex;
+}
+/* 內容 */
+.login_out{
+    display: flex;
+    flex-direction: column;
+}
+.login_out img{
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+    margin-top:100px;
 }
 .shell{
     width: 300px;
@@ -47,7 +58,7 @@ body{
     position: absolute;
     width: 25px;
     height: 25px;
-    background-color:rgb(202, 44, 86) ;
+    background-color:#F4AD41 ;
     border-radius:50%;
     transition: .5s;
     box-shadow: 0 0 10px black;
@@ -57,7 +68,7 @@ body{
 .bottom{
     width: 300px;
     height: 300px;
-    background-color: rgb(72, 66, 105);
+    background-color: rgb(29, 28, 28);
 
     transform-style: preserve-3d;
     position: relative;
@@ -81,7 +92,7 @@ body{
     width: 200px;
     height: 25px;
     padding: 0 10px;
-    background-color: rgb(30, 55, 65);
+    background-color: #f0dec3;
     color: white;
 }
 .bottom>div button{
@@ -96,7 +107,7 @@ body{
     cursor: pointer;
 }
 .bottom>div button:hover{
-    box-shadow: 0 0 10px #b09366;
+    box-shadow: 0 0 20px #b09366;
 }
 .signIN{
     transform: translateZ(70px);

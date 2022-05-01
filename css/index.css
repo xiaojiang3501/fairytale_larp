@@ -1,5 +1,7 @@
 /* 首頁 */
-
+::-webkit-scrollbar {
+    display: none;
+  }
 .wrapper{
     background-image: url("../img/index.png");
     width: 1200px;

@@ -24,7 +24,7 @@
 }
 .introduce ul{
     display: flex;
-    padding-bottom: 300px;
+    margin-bottom: 200px;
 }
 .introduce li{
   width: 260px;
@@ -48,4 +48,17 @@
 .introduce p{
     margin: 0 10px;
     font-size: 24px;
+}
+.introduce h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.vedio{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.vedio1{
+    margin-right: 80px;
 }

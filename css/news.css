@@ -1,8 +1,15 @@
 /* 最新消息 */
+.news_banner{
+    background-image: url(../img/news.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .news_main{
     position: relative;
     width: 1200px;
-    height: 1200px;
+    height: 900px;
     margin: 0 auto;
 }
 .news_pic>img{
@@ -18,7 +25,7 @@
     height: 350px;
     clip-path: polygon(50% 0%, 0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%);
     left: 280px;
-    top:340px;
+    top:140px;
 }
 .news2 {
     display: block;
@@ -27,7 +34,7 @@
     height: 350px;
     clip-path: polygon(50% 0%, 0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%);
     left: 600px;
-    top:340px;
+    top:140px;
 }
 .news3 {
     display: block;
@@ -36,21 +43,21 @@
     height: 350px;
     clip-path: polygon(50% 0%, 0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%);
     left:440px;
-    top:603px;
+    top:403px;
 }
 .shape1{
     width:260px;
-    top:410px;
+    top:210px;
     left: 10px;
 }
 .shape2{
     width: 260px;
-    top:410px;
+    top:210px;
     left: 940px;
 }
 .shape3{
     width: 260px;
-    top:700px;
+    top:500px;
     left: 155px;
 }
 .news_shape p{
