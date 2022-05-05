@@ -3,7 +3,8 @@
 body{
     font-family: Verdana;
 	line-height: 1.5;
-    background-color: #2B2C2A;
+    background-color: black;
+    color: white;
 }
 /* 載入畫面 */
 /*   這是整個會蓋住畫面的底色色塊  */
@@ -15,50 +16,51 @@ body{
     top: 0%;
     background-color: #2B2C2A;
     z-index: 100;
-  } 
+} 
+
   /*   這是中間loading的gif坐標css  */
  #status {
-    position: absolute;
-    width: 50px;
-    height: 50px;
+    position: fixed;
+    width: 218px;
+    height: 419px;
+    margin-left: -140px;
+    margin-top: -160px;
     left: 50%;
     top: 50%;
-    margin-left: -250px;
-    margin-top: -250px;
-  } 
+} 
+
 /* nav */
-/* .nav_out{
-    position: fixed;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.01);
-    z-index: 1;
-} */
 .nav{    
-     display: flex;
-     justify-content: space-around;
-     width: 1200px;
-     margin: 0 auto;
-     opacity: 0;
-     animation: nav .3s .5s ease-out forwards;    
+    z-index: 5;
+    /* position: fixed;   */
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    animation: nav .3s .5 s ease-out forwards;   
+    justify-content: space-between;       
+}
+.nav input{ 
+    display: none; 
 }
 .nav img{
     width: 100px;
+    animation: nav .3s .5s ease-out forwards;
 }
+
 .nav ul{
-    justify-content: flex-end;
     display: flex;
-    margin-top: 35px;
-}
+    margin-top: 30px;
+} 
 .nav li{
-    margin-left: 20px;
-    list-style:none;   
+    margin-left: 40px;
+    list-style:none; 
+    animation: nav .3s .5s ease-out forwards;  
 }
 .nav li a{
     display: block;
     text-decoration: none;
     color: white;
-    font-size: 20px;
-    margin-left: 20px; 
+    font-size: 18px; 
 }
 .fa-user{
     padding: 5px;
@@ -74,11 +76,7 @@ body{
 	80%{ transform: translateY(-10px); opacity: 1; }
 	100%{ transform: translateY(0px); opacity: 1; }
 }
-/* nav漢堡 */
-.nav .fa-book{
-    display: none;
-    color: white;
-}
+
 
 /* footer */
 footer{
@@ -127,3 +125,109 @@ footer p{
     background:url('../img/IG1.png') no-repeat;
     background-size: contain;
 } 
+
+
+/* NAV_RWD */
+@media screen and (max-width:500px) {
+    .nav{
+        width: 100%;
+        animation-play-state: paused;
+    }
+    .menu {
+        position: fixed;
+        right: -100px;
+        top: -100px;
+        z-index: 100;
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+        border-radius: 50%;
+        background: black;
+        transition: .5s ease-in-out;
+        box-shadow: 0 0 0 0 black,0 0 0 0 black;
+        display: block;
+    }
+   
+    .hamburger {
+      position: absolute;
+      top: 135px;
+      left: 50px;
+      width: 30px;
+      height: 2px;
+      background: white;
+      display: block;
+      transform-origin: center;
+      transition: .5s ease-in-out;
+    }
+    .hamburger:after, .hamburger:before {
+      transition: .5s ease-in-out;
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: white;
+    }
+    
+    .hamburger:before { top: -10px; }
+    .hamburger:after { bottom: -10px; }
+    
+    label input { display: none; }
+    
+    input:checked + .menu {
+      box-shadow: 0 0 0 100vw black, 0 0 0 100vh black;
+      border-radius: 0;  
+    }
+    
+    .nav label input:checked + .menu .hamburger {
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    
+    .nav label input:checked + .menu .hamburger:before {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        top: 0; 
+      }
+    .nav label input:checked + .menu .hamburger:after {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        bottom: 0;
+    }
+    
+    .nav label input:checked + .menu + ul { opacity: 1; }
+    
+    .nav ul {
+        flex-direction: column;
+        z-index: 200;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: .25s 0s ease-in-out;
+        margin: 0 ;
+    }
+    .nav li{
+      margin: 0 auto 10px;      
+    }    
+}
+
+/* footer_RWD */
+@media screen and (max-width:500px) {
+    footer{
+        width: 100%;
+    }
+    footer h1{
+        font-size:15px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+    }
+    .fo_logo{
+        padding:10px;
+    }
+    .FB{
+        margin-right: 5px;
+    }
+}

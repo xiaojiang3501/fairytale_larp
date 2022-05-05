@@ -197,4 +197,12 @@ h1{
     border:0;
     cursor:pointer;
 }
+
+/* 線上預約_RWD */
+@media screen and (max-width:500px) {
+    .cover{
+        width: 100%;
+    }
+
+}
       

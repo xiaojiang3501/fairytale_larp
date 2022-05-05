@@ -8,15 +8,12 @@
       <!-- CSS -->
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/reservation.css">
-    <link rel="stylesheet" href="./css/rwd.css">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- jQuery  -->
-    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
     <!-- 月曆 -->
-    <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="jqueryui/style.css">
+    <link href="./css/jquery-ui.css" rel="stylesheet">
     <title>線上預約</title>
 </head>
 <body>
@@ -26,18 +23,21 @@
     </div>        
         <!-- nav -->
         <nav class="nav">
-            <a href="index.html"><img src="./img/LOGO.png" alt="" /></a>
-            <i class="fa-solid fa-book" aria-hidden="true"></i>
+            <a href="index.html"><img src="./img/LOGO.png" alt="" /></a> 
+            <label>
+            <input type="checkbox">
+            <span class="menu"> <span class="hamburger"></span> </span>
             <ul>
                 <li><a href="about.html">關於我們</a></li>
                 <li><a href="news.html">最新消息</a></li>
                 <li><a href="product.html">劇本主題</a></li>
-                <li><a class="nav_yellow" href="reservation.html">線上預約</a></li>
-                <li><a href="Q&A.html">Q&A</a></li>
+                <li><a href="reservation.html">線上預約</a></li>
+                <li><a class="nav_yellow" href="Q&A.html">Q&A</a></li>
                 <li><a href="contact.html">聯絡我們</a></li>
                 <li><a href="login.html"><i class="fa-solid fa-user"></i>註冊/登入</a></li>
             </ul>
-        </nav> 
+            </label>
+        </nav>
         
     <section class="cover">
     <section class="reserve">
@@ -47,9 +47,9 @@
                 <h1>姓名：</h1>
                 <input type='text' id="re1">
                 <h1>電話：</h1>
-                <input type='text' id="re1">
+                <input type='tel' id="re1">
                 <h1>信箱：</h1>
-                <input type='text' id="re2">
+                <input type='email' id="re2">
 
                 <h1>劇本主題:</h1>
                 <select name="" id="se">
@@ -80,7 +80,7 @@
                     </optgroup>
                 </select>
 
-                <h1>日期:</h1>
+                <h1 class="demoHeaders">日期:</h1>
                 <div id="datepicker"></div>
 
                 <h1>場次</h1>
@@ -159,12 +159,24 @@
     </script> 
 
     <!-- 日期選擇器 -->
-   <script src="./JS/reservation.js"></script>
-   <script>
-    $( function() {
-      $( "#datepicker" ).datepicker();
+    <script src="./JS/jquery.js"></script>
+    <script src="./JS/jquery-ui.js"></script>
+    <script>
+
+    $( "#datepicker" ).datepicker({
+        inline: true
     });
-  </script>
+
+    // Hover states on the static widgets
+    $( "#dialog-link, #icons li" ).hover(
+        function() {
+            $( this ).addClass( "ui-state-hover" );
+        },
+        function() {
+            $( this ).removeClass( "ui-state-hover" );
+        }
+    );
+    </script>
 
 
 </body>

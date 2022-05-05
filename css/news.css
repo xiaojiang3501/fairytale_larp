@@ -67,3 +67,9 @@
 .news_shape p:hover{
     color: #F4AD41;
 }
+
+
+/* 最新消息_RWD */
+@media screen and (max-width:500px) {
+    
+}
