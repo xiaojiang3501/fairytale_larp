@@ -32,10 +32,9 @@ body{
 /* nav */
 .nav{    
     z-index: 5;
-    position: fixed; 
+    /* position: fixed;  */
     display: flex;
     width: 1000px;
- 
     animation: nav .3s .5 s ease-out forwards;   
     justify-content: space-between;       
 }
@@ -216,7 +215,9 @@ footer p{
 /* footer_RWD */
 @media screen and (max-width:500px) {
     footer{
-        width: 100%;
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+        margin: 0 10px;
     }
     footer h1{
         font-size:15px;

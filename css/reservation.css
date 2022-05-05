@@ -199,10 +199,9 @@ h1{
 /* 線上預約_RWD */
 @media screen and (max-width:500px) {
     .cover{
-        width: 100vw;
-        margin: 0;
+        width: calc(100% - 20px);
         box-sizing: border-box;
-        padding: 10px;
+        margin: 0 10px;
     }
     form{
         width: 100%;

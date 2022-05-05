@@ -57,7 +57,9 @@
 
     }
     .news_main{
-        width: auto;
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+        margin: 0 10px;
         height: auto;
         flex-direction: column;
     }
@@ -76,7 +78,7 @@
     }
     .news_main p{
         width: 100%;
-        font-size: 30px;
+        font-size: 28px;
         margin-top: 20px;
         margin-bottom: 50px;
     }

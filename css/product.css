@@ -116,7 +116,9 @@ h4{
 /* 劇本主題_RWD */
 @media screen and (max-width:500px) {
     .product{
-        width: 100%;
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+        margin: 0 10px;
     }
     .showcase-btn ul li{
         margin-bottom: 10px;

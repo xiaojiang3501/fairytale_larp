@@ -85,9 +85,10 @@ textarea{
 /* 聯絡我們RWD */
 @media screen and (max-width:500px) {
     .contact_out {
-        width: 100%;
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+        margin: 0 10px;
         flex-direction: column; 
-        padding: 0;   
     }   
     .contact{
         width:100vw;  

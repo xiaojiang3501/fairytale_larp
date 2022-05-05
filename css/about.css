@@ -1,4 +1,5 @@
 /* 關於我們 */
+/* 上面 */
 .about{
     background-image: url(../img/about.png);
     width: 1200px;
@@ -17,6 +18,7 @@
     height: 500px;
     margin:0 auto;
 }
+/* 中間介紹 */
 .introduce{
     color: white;
     width: 1200px;
@@ -54,14 +56,16 @@
     text-align: center;
     margin-bottom: 60px;
 }
+
+/* 影片 */
 .vedio{
     display: flex;
     margin-bottom: 100px;
 }
-
 .vedio1{
-    margin-right: 80px;
+    margin-right: 100px;
 }
+
 
 /* 關於我們_RWD */
 @media screen and (max-width:500px) {
@@ -70,19 +74,46 @@
         height: 100%;
     }
     .ab{
-        font-size: 15px;
-        
+        font-size: 15px;   
     }
     .introduce{
-        width: 100%;
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+        margin: 0 10px;
     }
     .introduce ul{
         flex-wrap: wrap;
+        margin: 0;
     }
     .introduce li{
-
+        margin-bottom: 50px;
     }
     .introduce img{
         width: 100%;
     }
+    .vedio{
+        flex-wrap: wrap;
+    }
+    .vedio1,.vedio2{
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-bottom: 56.25%;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    .vedio2{
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-bottom: 56.25%;
+    }
+    iframe{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
 }
