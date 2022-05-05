@@ -35,6 +35,7 @@ body{
     /* position: fixed;  */
     display: flex;
     width: 1000px;
+    margin: 0 auto;
     animation: nav .3s .5 s ease-out forwards;   
     justify-content: space-between;       
 }
@@ -45,7 +46,6 @@ body{
     width: 100px;
     animation: nav .3s .5s ease-out forwards;
 }
-
 .nav ul{
     display: flex;
     margin-top: 30px;
