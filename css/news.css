@@ -52,9 +52,7 @@
 /* 最新消息_RWD */
 @media screen and (max-width:500px) {
     .news_banner{
-        margin-bottom: 100px;
-        height:100vh;
-
+    
     }
     .news_main{
         width: calc(100% - 20px);
@@ -74,12 +72,12 @@
     .news_main li{
         position: static;
         width: 300px;
-        margin: 0 auto;
+        margin: 10px auto;
     }
     .news_main p{
         width: 100%;
         font-size: 28px;
         margin-top: 20px;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
     }
 }

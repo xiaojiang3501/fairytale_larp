@@ -145,9 +145,9 @@ footer p{
         height: 200px;
         cursor: pointer;
         border-radius: 50%;
-        background: black;
+        background: #2B2C2A;
         transition: .5s ease-in-out;
-        box-shadow: 0 0 0 0 black,0 0 0 0 black;
+        box-shadow: 0 0 0 0 #2B2C2A,0 0 0 0 #2B2C2A;
         display: block;
     }
     .hamburger {
@@ -177,13 +177,8 @@ footer p{
     .hamburger:after { 
         bottom: -10px; 
     }
-  
-    label input { 
-        display: none;
-     }
-    
     input:checked + .menu {
-        box-shadow: 0 0 0 100vw black, 0 0 0 100vh black;
+        box-shadow: 0 0 0 100vw #2B2C2A, 0 0 0 100vh #2B2C2A;
         border-radius: 0;  
     }
     .nav label input:checked + .menu .hamburger {
@@ -203,11 +198,10 @@ footer p{
         /* 不要讓ul點到 */
         pointer-events: auto ;
     }
-    
     .nav ul {
         flex-direction: column;
         z-index: 200;
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -218,7 +212,7 @@ footer p{
         margin: 0 ;
     }
     .nav li{
-      margin: 0 auto 10px;      
+      margin: 0 auto 20px;
     }    
 }
 
