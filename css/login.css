@@ -7,7 +7,7 @@
 }
 body{
     height: 100vh;
-    background-color:#2B2C2A;
+    background-color:black;
     font-family: Arial,;
     justify-content: center;
     align-items: center;
@@ -61,7 +61,7 @@ body{
     background-color:#F4AD41 ;
     border-radius:50%;
     transition: .5s;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px #2B2C2A;
     left: 0;
     transform: translate(-1px);
 }

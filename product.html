@@ -11,8 +11,8 @@
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- jQuery  -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    
     <title>劇本主題</title>
 
 </head>
@@ -33,9 +33,9 @@
             <ul>
                 <li><a href="about.html">關於我們</a></li>
                 <li><a href="news.html">最新消息</a></li>
-                <li><a href="product.html">劇本主題</a></li>
+                <li><a class="nav_yellow" href="product.html">劇本主題</a></li>
                 <li><a href="reservation.html">線上預約</a></li>
-                <li><a class="nav_yellow" href="Q&A.html">Q&A</a></li>
+                <li><a  href="Q&A.html">Q&A</a></li>
                 <li><a href="contact.html">聯絡我們</a></li>
                 <li><a href="login.html"><i class="fa-solid fa-user"></i>註冊/登入</a></li>
             </ul>
@@ -664,28 +664,27 @@
     </footer>
     
     <!-- javascript -->
+
     <!-- 載入畫面 -->
     <script>
-    // 確認整個頁面讀取完畢再將這三個div隱藏起來
-    $(window).load(function() { 
-    //delay --> 延遲幾秒才fadeOut        
-    $("#status").delay(400).fadeOut(800); 
-    $("#preloader").delay(400).fadeOut(1000);
-    })
-    </script>
+        $(window).load(function() { // 確認整個頁面讀取完畢再將這三個div隱藏起來
+        $("#status").delay(400).fadeOut(800); //delay --> 延遲幾秒才fadeOut
+        $("#preloader").delay(400).fadeOut(1000);
+        })
+        </script> 
 
     <!-- 篩選 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
     <script>
-       var $grid = $('.cases').isotope({
-    // options
-    });
-    // filter items on button click
-    $('.showcase-btn').on( 'click', 'li', function() {
-    var filterValue = $(this).attr('data-filter');
-    $grid.isotope({ filter: filterValue });
-    });
+        var $grid = $('.cases').isotope({
+        // options
+        });
+        // filter items on button click
+        $('.showcase-btn').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        });
     </script>
 
     <!-- popup -->

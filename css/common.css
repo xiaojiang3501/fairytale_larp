@@ -14,7 +14,7 @@ body{
     height: 100%;
     left: 0%;
     top: 0%;
-    background-color: #2B2C2A;
+    background-color: black;
     z-index: 100;
 } 
 
@@ -23,7 +23,7 @@ body{
     position: fixed;
     width: 218px;
     height: 419px;
-    margin-left: -140px;
+    margin-left: -100px;
     margin-top: -160px;
     left: 50%;
     top: 50%;
