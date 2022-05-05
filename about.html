@@ -12,13 +12,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- jQuery  -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    <!-- 載入畫面 -->
+    <script src="./JS/loading.js"></script>
     <title>關於我們</title>
 </head>
 <body>
      <!-- 載入畫面 -->
-     <!-- <div id="preloader">
+     <div id="preloader">
         <div id="status"><img src="./img/LOGO.gif"/></div>
-    </div>  -->
+    </div> 
         <!-- nav -->
         <nav class="nav">
             <a href="index.html"><img src="./img/LOGO.png" alt="" /></a> 
@@ -106,13 +108,5 @@
             </p>
         </article>
     </footer>
-    <!-- 載入畫面 -->
-    <script>
-        $(window).load(function() { // 確認整個頁面讀取完畢再將這三個div隱藏起來
-    $("#status").delay(400).fadeOut(800); //delay --> 延遲幾秒才fadeOut
-    $("#preloader").delay(400).fadeOut(1000);
-    })
-    </script>  
-
 </body>
 </html>

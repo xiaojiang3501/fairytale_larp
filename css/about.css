@@ -12,8 +12,10 @@
     /* border: 1px solid white; */
 } 
 .about p{
+    width: 900px;
     margin: auto;
     font-size: 32px;
+    padding-top: 250px;
 }
 
 /* 中間介紹 */
@@ -74,9 +76,11 @@
         background-image: none
     }
     .about p{
+        width: 85vw;
         font-size: 15px;
         margin: 0 20px;
-    }
+        padding: 0;
+    } 
     .introduce{
         width: calc(100% - 20px);
         box-sizing: border-box;

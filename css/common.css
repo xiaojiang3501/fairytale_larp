@@ -91,6 +91,7 @@ footer h1{
     font-size: 24px;
     padding-top: 40px;
     padding-bottom: 60px;
+    text-align: left;
 }
 .fo_logo{
     padding-top: 50px;
@@ -224,6 +225,7 @@ footer p{
         margin: 0 10px;
     }
     footer h1{
+        text-align: left;
         font-size:15px;
         padding-top: 10px;
         padding-bottom: 30px;

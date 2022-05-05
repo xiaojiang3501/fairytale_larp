@@ -210,10 +210,11 @@ h1{
     .plain{
         width: 100%;
     }
-    #re1,#re2{
+    #re2{
+         width: 80vw;
     }
     #datepicker{
-        width: 100vw;
+        width: 10 0vw;
     }
     .session{
         flex-direction: column;
@@ -225,6 +226,7 @@ h1{
     }
     #btn{
         margin: 0;
+        width:100px; 
     }
 }
       

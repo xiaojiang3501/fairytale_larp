@@ -10,15 +10,17 @@
     <link rel="stylesheet" href="./css/contact.css">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-      <!-- jQuery  -->
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    <!-- jQuery  -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    <!-- 載入畫面 -->
+    <script src="./JS/loading.js"></script>
     <title>聯絡我們</title>
 </head>
 <body>
      <!-- 載入畫面 -->
-     <!-- <div id="preloader">
+     <div id="preloader">
         <div id="status"><img src="./img/LOGO.gif"/></div>
-    </div>         -->
+    </div>        
         <!-- nav -->
         <nav class="nav">
             <a href="index.html"><img src="./img/LOGO.png" alt="" /></a> 
@@ -36,8 +38,7 @@
             </ul>
             </label>
         </nav>
-
-        
+  
     <section class="contact_out">
         <!-- 聯絡資訊 -->
         <section class="contact">
@@ -51,7 +52,7 @@
             </p>
             </article> 
             <article class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.467687045387!2d121.54106421537912!3d25.05213284371753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abddfa4b02ab%3A0x7b0d48826d60cad0!2zMTA05Y-w5YyX5biC5Lit5bGx5Y2A5Y2X5Lqs5p2x6Lev5LiJ5q61MjE56JmfNeaokw!5e0!3m2!1szh-TW!2stw!4v1649838770012!5m2!1szh-TW!2stw" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.467687045387!2d121.54106421537912!3d25.05213284371753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abddfa4b02ab%3A0x7b0d48826d60cad0!2zMTA05Y-w5YyX5biC5Lit5bGx5Y2A5Y2X5Lqs5p2x6Lev5LiJ5q61MjE56JmfNeaokw!5e0!3m2!1szh-TW!2stw!4v1649838770012!5m2!1szh-TW!2stw"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </article>       
         </section>
@@ -107,13 +108,5 @@
             </p>
         </article>
     </footer>
-    <!-- 載入畫面 -->
-    <script>
-        $(window).load(function() { // 確認整個頁面讀取完畢再將這三個div隱藏起來
-    $("#status").delay(400).fadeOut(800); //delay --> 延遲幾秒才fadeOut
-    $("#preloader").delay(400).fadeOut(1000);
-    })
-    </script>      
-   
 </body>
 </html>
