@@ -13,14 +13,14 @@
 }
 .ab{
     font-size: 32px;
-    color: white;
     width: 900px;
-    height: 500px;
-    margin:0 auto;
+    margin: auto;
+
+    
 }
+
 /* 中間介紹 */
 .introduce{
-    color: white;
     width: 1200px;
     margin: 0 auto;
 }
@@ -79,7 +79,7 @@
     .introduce{
         width: calc(100% - 20px);
         box-sizing: border-box;
-        margin: 0 10px;
+        margin: 0;
     }
     .introduce ul{
         flex-wrap: wrap;
