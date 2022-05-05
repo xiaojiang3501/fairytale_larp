@@ -32,10 +32,10 @@ body{
 /* nav */
 .nav{    
     z-index: 5;
-    /* position: fixed;   */
+    position: fixed; 
     display: flex;
     width: 1000px;
-    margin: 0 auto;
+ 
     animation: nav .3s .5 s ease-out forwards;   
     justify-content: space-between;       
 }

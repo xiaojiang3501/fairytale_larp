@@ -157,8 +157,7 @@ h1{
     padding: 10px; 
     margin-right: 20px;
     background-color: #E37728; 
-    color: white;
-    
+    color: white;  
 }
 .item1 h2{
     align-items: center;
@@ -168,7 +167,6 @@ h1{
     border-radius: 10px;
     background-color: brown;
     color: white;
-    
     padding: 10px; 
 }
 #item2:checked + .item2{
@@ -201,8 +199,33 @@ h1{
 /* 線上預約_RWD */
 @media screen and (max-width:500px) {
     .cover{
+        width: 100vw;
+        margin: 0;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    form{
+        width: 100%;
+        padding: 0;
+    }
+    .plain{
         width: 100%;
     }
-
+    #re1,#re2{
+    }
+    #datepicker{
+        width: 100vw;
+    }
+    .session{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .item1,.item2,.item3{
+        width: 150px;
+        margin-bottom: 20px;
+    }
+    #btn{
+        margin: 0;
+    }
 }
       
