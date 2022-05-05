@@ -14,18 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- jQuery  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-    <!-- 載入畫面 -->
-    <script src="./JS/loading.js"></script>
     <title>童話故事LARP</title>
 
 </head>
-<body>
-     <!-- 載入畫面 -->
-        <div id="preloader">
-            <div id="status"><img src="./img/LOGO.gif"/></div>
-        </div> 
-        
+<body>       
     <!-- nav -->
     <nav class="nav">
         <a href="index.html"><img src="./img/LOGO.png" alt="" /></a> 
@@ -129,15 +121,7 @@
 
     
     <!----------------------------------------------------javascript--------------------------------------------------->
-    <!-- 載入畫面 -->
-    <script>
-        // 確認整個頁面讀取完畢再將這三個div隱藏起來
-        $(window).load(function() { 
-        //delay --> 延遲幾秒才fadeOut        
-        $("#status").delay(400).fadeOut(800); 
-        $("#preloader").delay(400).fadeOut(1000);
-        })
-    </script>
+ </script>
     <!-- gsap-latest-beta.min.js -->
     <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426'></script>
     <!-- ScrollTrigger.min.js -->

@@ -6,28 +6,6 @@ body{
     background-color: black;
     color: white;
 }
-/* 載入畫面 */
-/*   這是整個會蓋住畫面的底色色塊  */
-#preloader {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0%;
-    top: 0%;
-    background-color: black;
-    z-index: 100;
-} 
-
-  /*   這是中間loading的gif坐標css  */
- #status {
-    position: fixed;
-    width: 218px;
-    height: 419px;
-    margin-left: -100px;
-    margin-top: -160px;
-    left: 50%;
-    top: 50%;
-} 
 
 /* nav */
 .nav{    
