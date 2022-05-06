@@ -18,7 +18,7 @@ function LandingPageScrollTrigger() {
     })
     LandingPageScrollTrigger
         
-    .to('#ImgWrapper #img', { y: -550, }, 0)
+    .to('#ImgWrapper #img', { y: -480, }, 0)
     .to('#ImgWrapper #img', { z: 2800, }, 0)
 
         .from('#codeby', { y : 130, opacity: 0 }, 0.31)

@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/LOGO.ico" type="image/x-icon">
-      <!-- CSS -->
+    <!-- CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/about.css">
     <!-- font-awesome -->
@@ -51,19 +52,19 @@
     <!-- introduce -->
     <section class="introduce">
         <ul>
-            <li><img src="./img/1.jpg" alt="">
+            <li data-aos="flip-left"><img src="./img/1.jpg" alt="">
                 <h1>專業主持人</h1>
                 <p>帶動整個遊戲流程主持人、真人互動NPC</p>
             </li>
-            <li><img src="./img/2.jpeg" alt="">
+            <li data-aos="flip-left"><img src="./img/2.jpeg" alt="">
                 <h1>精緻場景</h1>
                 <p>身歷其境的場景，讓玩家能夠更加融入</p>
             </li>
-            <li><img src="./img/3.jpg" alt="">
+            <li data-aos="flip-left"><img src="./img/3.jpg" alt="">
                 <h1>多樣服裝</h1>
                 <p>提供化妝、服裝，每個角色都能體驗</p>
             </li>
-            <li><img src="./img/4.jpg" alt="">
+            <li data-aos="flip-left"><img src="./img/4.jpg" alt="">
                 <h1>劇本豐富</h1>
                 <p>銷量排行榜的多種主題劇本</p>
             </li>
@@ -104,5 +105,11 @@
             </p>
         </article>
     </footer>
+
+      <!-- javascript AOS-->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+          AOS.init();
+      </script>
 </body>
 </html>

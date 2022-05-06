@@ -70,8 +70,8 @@ h1{
 }
 #scene{
     position: absolute;
-    top:-17%;
-    left: 14%;
+    top:-20%;
+    left: 8%;
     z-index: -10;
 }
 .news h1{
@@ -170,7 +170,9 @@ h1{
     }
     .news li{
         margin-bottom: 20px;
-       
+    }
+    .news li img{
+        filter: grayscale(0);
     }
     .hot h1{
         font-size: 30px;

@@ -21,7 +21,6 @@ body{
 }      
 .nav img{
     width: 130px;
-    margin-left: 200px;
     animation: nav .3s .5s ease-out forwards;   
 }
 .nav ul{

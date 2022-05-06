@@ -109,6 +109,7 @@ h4{
 .bottom a{
     text-decoration: none;
     display: block;
+    font-size: 18px;
     width: 100px;
     height: 40px;
     line-height: 40px;
@@ -118,6 +119,9 @@ h4{
     border-radius: 10px;
     margin-top: 10px;
     float: right;
+}
+.bottom a:hover{
+    transform: scale(1.05);
 }
 
 /* 劇本主題_RWD */

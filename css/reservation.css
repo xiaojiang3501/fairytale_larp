@@ -165,21 +165,21 @@ h1{
 }
 #item1:checked + .item1{
     display: block;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: brown;
     color: white;
     padding: 10px; 
 }
 #item2:checked + .item2{
     display: block;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: brown;
     color: white;
     padding: 10px; 
 }
 #item3:checked + .item3{
     display: block;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: brown;
     color: white;
     padding: 10px; 
@@ -197,7 +197,9 @@ h1{
     cursor:pointer;
     text-align: center;
 }
-
+#btn:hover{
+    transform: scale(1.05);
+}
 /* 線上預約_RWD */
 @media screen and (max-width:500px) {
     .cover{
