@@ -43,7 +43,7 @@ h1{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    box-shadow: 0 -300px 500px #000 inset;
+    box-shadow: 0 -250px 500px #000 inset;
 }
 .main_play{
     width: 1000px;
