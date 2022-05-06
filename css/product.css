@@ -40,15 +40,20 @@
 }
 .case-item{
     width: 200px;
-    padding: 20px;  
+    padding: 10px;  
+    margin: 10px;
     text-align: center;
     cursor: pointer;
+    background-color: #2B2C2A;
+    border-radius: 10px;   
 }
 .case-item img{
-    width: 100%;   
+    width: 100%;
+   
 }
+
 .case-item:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* popup */

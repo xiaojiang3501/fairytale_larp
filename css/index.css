@@ -63,7 +63,7 @@ h1{
     width: 1000px;
 }
 .main_play h1{
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .main_play h2{
     font-size: 32px;
@@ -83,8 +83,8 @@ h1{
 }
 #scene{
     position: absolute;
-    top:-160px;
-    left: 50px;
+    top:-17%;
+    left: 14%;
     z-index: -10;
 }
 .news h1{
@@ -102,6 +102,11 @@ h1{
 }
 .news ul img{
     width: 100%;
+    filter: grayscale(80%);
+}
+.news ul img:hover{
+    filter: grayscale(0);
+
 }
 
 /* 熱門主題 */

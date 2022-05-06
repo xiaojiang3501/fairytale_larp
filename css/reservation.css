@@ -157,7 +157,8 @@ h1{
     padding: 10px; 
     margin-right: 20px;
     background-color: #E37728; 
-    color: white;  
+    color: white; 
+    text-align: center; 
 }
 .item1 h2{
     align-items: center;
@@ -194,6 +195,7 @@ h1{
     color: white;
     border:0;
     cursor:pointer;
+    text-align: center;
 }
 
 /* 線上預約_RWD */
