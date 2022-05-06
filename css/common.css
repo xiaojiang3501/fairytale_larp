@@ -115,6 +115,7 @@ footer p{
     }
     .nav img{
         margin: 0;
+        width: 22vw;
     }
     .menu {
         position: fixed;
@@ -125,14 +126,14 @@ footer p{
         height: 200px;
         cursor: pointer;
         border-radius: 50%;
-        background: #2B2C2A;
+        background: black;
         transition: .5s ease-in-out;
-        box-shadow: 0 0 0 0 #2B2C2A,0 0 0 0 #2B2C2A;
+        box-shadow: 0 0 0 0 black,0 0 0 0 black;
         display: block;
     }
     .hamburger {
         position: absolute;
-        top: 135px;
+        top: 140px;
         left: 50px;
         width: 30px;
         height: 2px;
@@ -158,7 +159,7 @@ footer p{
         bottom: -10px; 
     }
     input:checked + .menu {
-        box-shadow: 0 0 0 100vw #2B2C2A, 0 0 0 100vh #2B2C2A;
+        box-shadow: 0 0 0 100vw black, 0 0 0 100vh black;
         border-radius: 0;  
     }
     .nav label input:checked + .menu .hamburger {

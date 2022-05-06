@@ -152,7 +152,7 @@ h1{
 .item1,.item2,.item3{
     font-size:20px;
     display: block;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
     padding: 10px; 
     margin-right: 20px;
@@ -203,7 +203,7 @@ h1{
     .cover{
         width: calc(100% - 20px);
         box-sizing: border-box;
-        margin: 0 10px;
+        margin: 0 10px 50px;
     }
     form{
         width: 100%;
@@ -228,7 +228,7 @@ h1{
     }
     #btn{
         margin: 0;
-        width:100px; 
+        width:120px; 
     }
 }
       

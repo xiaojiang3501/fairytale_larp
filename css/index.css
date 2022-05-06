@@ -2,23 +2,6 @@
 ::-webkit-scrollbar {
     display: none;
   }
-
-@keyframes wrapper {
-	0%{ transform: translateY(50px); opacity: 0; }
-	80%{ transform: translateY(-10px); opacity: 1; }
-	100%{ transform: translateY(0px); opacity: 1; }
-}
-@keyframes h1{
-	0%{ transform: translateY(50px); opacity: 0; }
-	80%{ transform: translateY(-10px); opacity: 1; }
-	100%{ transform: translateY(0px); opacity: 1; }
-}
-@keyframes h2{
-	0%{ transform: translateY(50px); opacity: 0; }
-	80%{ transform: translateY(-10px); opacity: 1; }
-	100%{ transform: translateY(0px); opacity: 1; }
-}
-
 /* banner */
 #canvasbg{
   position: fixed;
@@ -52,7 +35,6 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     background-image: url(../img/play.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -152,14 +134,14 @@ h1{
     #ImgWrapper{
         perspective: none; 
     }
-    h1{
-        font-size: 30px;
-        margin: 50px auto ;
-    }
     .main_play{
         width: calc(100% - 20px);
-        box-sizing: border-box;
-        margin: 0;    
+        box-sizing: border-box;  
+        margin: 0; 
+    }
+    .main_play h1{
+        font-size: 30px;
+        margin: 0 auto 50px;
     }
     .main_play h2{
         font-size:20px;
@@ -167,10 +149,14 @@ h1{
     .main_play p{
         font-size:14px;
     }
-    
     .news{
         width: 100vw;
-
+        height: 100%;
+        margin-bottom: 500px;
+    }
+    .news h1{
+        font-size: 30px;
+        margin: 0 auto 50px;
     }
     .news ul{
         flex-wrap: wrap;
@@ -178,13 +164,19 @@ h1{
         height: 100vh;
     }
     .news li{
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+       
+    }
+    .hot h1{
+        font-size: 30px;
+        margin: 0 auto 50px;
     }
     #scene{
         display: none;
     } 
     .swiper{
         width: 100vw;
+        margin: 20px auto 100px;
     }
 }
 
@@ -196,7 +188,7 @@ h1{
     width: 100%;
     margin: 0 auto;
     animation: nav .3s .5 s ease-out forwards;   
-    justify-content: space-around;       
+    justify-content: space-evenly;       
 }
 @media screen and (max-width:500px){
     .nav{

@@ -54,7 +54,7 @@
     .question{
         width: calc(100% - 20px);
         box-sizing: border-box;
-        margin: 0 10px;
+        margin: 20px 10px;
     }
     #A>h2{
         font-size:20px;
