@@ -50,7 +50,7 @@ h1{
     margin-bottom: 100px;
 }
 .main_play h1{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .main_play h2{
     font-size: 32px;
@@ -71,7 +71,7 @@ h1{
 #scene{
     position: absolute;
     top:-160px;
-    left: 130px;
+    left: 100px;
     z-index: -10;
 }
 .news h1{
