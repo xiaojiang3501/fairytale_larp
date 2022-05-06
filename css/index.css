@@ -70,8 +70,8 @@ h1{
 }
 #scene{
     position: absolute;
-    top:-20%;
-    left: 8%;
+    top:-160px;
+    left: 130px;
     z-index: -10;
 }
 .news h1{

@@ -28,3 +28,7 @@ function LandingPageScrollTrigger() {
 window.onload = () => {
     LandingPageScrollTrigger()
 }
+
+// if(window.innerWidth>500px){
+
+// }
