@@ -2,15 +2,15 @@
 // 卷軸動畫
 document.addEventListener('scroll', function(e) {
 
-    // console.log(window.scrollY);
+   console.log(window.scrollY);
    
-    if(window.scrollY >= 700){
+    if(window.scrollY >= 600){
         document.getElementsByClassName("title")[0].style.opacity = 1;
     }
-    if(window.scrollY >= 1600){
+    if(window.scrollY >= 1300){
         document.getElementsByClassName("title")[1].style.opacity = 1;
     }
-    if(window.scrollY >= 3000){
+    if(window.scrollY >= 2400){
         document.getElementsByClassName("title")[2].style.opacity = 1;
     }
     if(window.scrollY >= 780){
@@ -18,34 +18,34 @@ document.addEventListener('scroll', function(e) {
             document.getElementsByClassName("b")[i].style.opacity = 1;
         }
     }
-    if(window.scrollY >= 1700){
+    if(window.scrollY >= 650){
         document.getElementsByClassName("c")[0].style.opacity = 1;
     }
-    if(window.scrollY >= 1900){
+    if(window.scrollY >= 700){
         document.getElementsByClassName("c")[1].style.opacity = 1;
     }
-    if(window.scrollY >= 2100){
+    if(window.scrollY >= 800){
         document.getElementsByClassName("c")[2].style.opacity = 1;
     }
-    if(window.scrollY >= 2300){
+    if(window.scrollY >= 900){
         document.getElementsByClassName("c")[3].style.opacity = 1;
     }
-    if(window.scrollY >= 2500){
+    if(window.scrollY >= 1000){
         document.getElementsByClassName("c")[4].style.opacity = 1;
     }
-    if(window.scrollY >= 1700){
+    if(window.scrollY >= 650){
         document.getElementsByClassName("d")[0].style.opacity = 1;
     }
-    if(window.scrollY >= 1900){
+    if(window.scrollY >= 750){
         document.getElementsByClassName("d")[1].style.opacity = 1;
     }
-    if(window.scrollY >= 2100){
+    if(window.scrollY >= 850){
         document.getElementsByClassName("d")[2].style.opacity = 1;
     }
-    if(window.scrollY >= 2300){
+    if(window.scrollY >= 950){
         document.getElementsByClassName("d")[3].style.opacity = 1;
     }
-    if(window.scrollY >= 2500){
+    if(window.scrollY >= 1050){
         document.getElementsByClassName("d")[4].style.opacity = 1;
     }
 });
