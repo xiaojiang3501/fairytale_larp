@@ -9,7 +9,7 @@
 }
 .contact{
     width:600px;
-    background-color: #2B2C2A;  
+    background-color: #2B2C2A;
 }
 .con_main,.map{
     margin-left: 80px; 
@@ -50,17 +50,17 @@ iframe{
 .mail li{
     padding-bottom: 10px;
     width: 400px;
-    margin: 0 auto;
+    margin: 0 auto; 
+}
+.mail h3{
+    font-size: 24px;
+    padding: 5px;
 }
 .in{
     opacity: .7;
     width: 380px;
     height: 15px;
     padding: 10px;    
-}
-.mail h3{
-    font-size: 24px;
-    padding: 5px;
 }
 textarea{
     opacity: .7;
@@ -71,17 +71,23 @@ textarea{
 }
 .mail .bt{ 
     display: block;
-    width: 150px;
+    width: 120px;
     height: 40px;
     font-size: 24px;
-    background:#2B2C2A;
+    font-weight: bold;
+    background-color: white;
     border:0;
     cursor:pointer;
     border-radius: 5px;
     margin: 0 auto;
-    color: white;        
+    color: #2B2C2A; 
+    border: #2B2C2A 3px solid;       
 }
-
+.mail .bt:hover{
+    background-color:#2B2C2A;
+    color:white;
+    border: white 3px solid; 
+}
 
 /* 聯絡我們RWD */
 @media screen and (max-width:500px) {
@@ -92,7 +98,7 @@ textarea{
         flex-direction: column; 
     }    
     .contact{
-        width:100vw;
+        width:300px;
         margin: 0 auto 50px;
         padding: 20px;        
     }
@@ -114,38 +120,43 @@ textarea{
     }
 
     iframe{
-        width:100vw;
+        width:98%;
         padding-bottom: 100px;
     }
 
      /* 寄信給我們 */
     .mail{
-        width:100vw;
+        width:350px;
         padding: 0;
-        margin-bottom: 100px;   
+        margin:0 auto 100px;   
     }
     .mail h2{
         font-size:20px;
+        padding-top: 10px;
     }
     .mail h3{
         font-size:15px;
         padding:0;
     }
     .mail ul{
-        padding:0px auto 10px;
+        padding:0;
     }
     .mail li{
+        width:240px;
         padding: 0;
     }
-    textarea,.in{
-        width:60vw;
-        padding:5px;
+    .in{
+        width:90%;
+        height: 8px;
     }
     textarea{
-        height: 60vw;
+        height: 180px;
+        margin:0;
+        width:90%;
     }
     .mail .bt{    
-        width: 120px;
-        font-size:20px;  
+        font-size:18px;
+        height: 30px;
+        margin-bottom: 10px;  
     }
 }
