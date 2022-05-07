@@ -160,7 +160,7 @@ h1{
     .news{
         width: 100vw;
         height: 100vh;
-        margin-bottom: 200px;
+        margin-bottom: 100px;
     }
     .news h1{
         font-size: 30px;
@@ -176,7 +176,7 @@ h1{
     }
     .news li img{
         filter: grayscale(0);
-        width: 80%;
+        width: 50%;
         display: block;
         margin: 0 auto;
     }
