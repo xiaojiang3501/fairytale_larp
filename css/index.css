@@ -73,7 +73,7 @@ h1{
 }
 #scene{
     position: absolute;
-    top:-160px;
+    top:-170px;
     left: 80px;
     z-index: -10;
 }
