@@ -1,4 +1,23 @@
 /* 線上預約 */
+/* 上面流程 */
+.process ul{
+    width: 800px;
+    margin: 100px auto;
+    display: flex; 
+}
+ .process li{
+    width: 180px; 
+    padding: 10px; 
+} 
+.process img{
+    display: block;
+   
+}
+.process p{
+    padding:20px;
+    font-size: 18px;
+}
+
 /* 背景 */
 .cover{
     position: relative;
@@ -35,22 +54,26 @@
     animation: c2 15s 1s linear infinite;
     left: -200px;
     top:100px;
-}.c3{
+}
+.c3{
     position: absolute;
     animation: c3 15s 6s linear infinite;
     left: -200px;
     top:200px;
-}.c4{
+}
+.c4{
     position: absolute;
     animation: c4 15s 10s linear infinite;
     left: -200px;
     top:300px;
-}.c5{
+}
+.c5{
     position: absolute;
     animation: c5 15s 15s linear infinite;
     left: -200px;
     top:400px;
-}.c6{
+}
+.c6{
     position: absolute;
     animation: c6 15s 8s linear infinite;
     left: -200px;
@@ -202,6 +225,33 @@ h1{
 }
 /* 線上預約_RWD */
 @media screen and (max-width:500px) {
+    .process{
+        width: 100%;
+    }
+    .process ul{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .process li{
+        margin-left: 0;
+        height: auto;
+        width: calc(100% - 40px);
+        box-sizing: border-box;
+        margin: 0 auto 20px auto;
+    }
+    .process img{
+        float: left;
+        width: 100px;
+        margin-left: 10px;
+    }
+    .process h3{
+        font-size: 28px;
+        text-align: left;
+        margin-left: 110px;
+    }
+    .process p{
+        margin-left: 110px;
+    }
     .cover{
         width: calc(100% - 20px);
         box-sizing: border-box;
@@ -216,9 +266,6 @@ h1{
     }
     #re2{
          width: 80vw;
-    }
-    #datepicker{
-        width: 10 0vw;
     }
     .session{
         flex-direction: column;

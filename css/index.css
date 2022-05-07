@@ -1,7 +1,9 @@
 /* 首頁 */
-::-webkit-scrollbar {
+
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
+
 .title,.c,.d{
     opacity: 0;
     transition: all 1.5s; 

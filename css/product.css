@@ -143,5 +143,6 @@ h4{
     .case-item{
         width: 30vw;
         margin: 5px;
+        font-size: 15px;
     }
 }
