@@ -118,8 +118,8 @@ footer p{
     }
     .menu {
         position: fixed;
-        right: -100px;
-        top: -100px;
+        right: -110px;
+        top: -110px;
         z-index: 100;
         width: 200px;
         height: 200px;
@@ -132,8 +132,8 @@ footer p{
     }
     .hamburger {
         position: absolute;
-        top: 140px;
-        left: 50px;
+        top: 145px;
+        left: 40px;
         width: 30px;
         height: 2px;
         background: white;
@@ -193,9 +193,20 @@ footer p{
     }
     .nav li{
       margin: 0 auto 20px;
-    }    
-}
+      animation: li .3s .5s ease-out forwards; 
+      opacity: 0;
+    } 
+    .nav a{
+       
+    }
 
+    @keyframes li {
+        0%{ transform: translateY(50px); opacity: 0; }
+        80%{ transform: translateY(-10px); opacity: 1; }
+        100%{ transform: translateY(0px); opacity: 1; }
+    }
+
+}
 /* footer_RWD */
 @media screen and (max-width:500px) {
     footer{

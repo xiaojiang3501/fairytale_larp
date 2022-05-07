@@ -1,8 +1,6 @@
 
 // 卷軸動畫
 document.addEventListener('scroll', function(e) {
-
-   console.log(window.scrollY);
    
     if(window.scrollY >= 600){
         document.getElementsByClassName("title")[0].style.opacity = 1;

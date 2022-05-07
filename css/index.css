@@ -140,27 +140,29 @@ h1{
         display: none;
     }
     #ImgWrapper{
-        perspective: none; 
+        perspective: none;
     }
     .main_play{
         width: calc(100% - 20px);
-        box-sizing: border-box;  
-     
+        box-sizing: border-box; 
+        margin-top: 250px; 
+    }
+    .title,.c,.d{
+        opacity: 1;
     }
     .main_play h1{
         font-size: 30px;
-        margin: 0 auto 50px;
+        margin: 0 auto 10px;
     }
     .main_play h2{
-        font-size:20px;
+        font-size:18px;
     }
     .main_play p{
-        font-size:14px;
+        font-size:12px;
     }
     .news{
         width: 100vw;
         height: 100vh;
-        margin-bottom: 100px;
     }
     .news h1{
         font-size: 30px;
@@ -176,7 +178,7 @@ h1{
     }
     .news li img{
         filter: grayscale(0);
-        width: 50%;
+        width: 60%;
         display: block;
         margin: 0 auto;
     }
