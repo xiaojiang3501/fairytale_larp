@@ -26,10 +26,10 @@ body{
 .nav ul{
     display: flex;      
     margin-top: 50px;
+    list-style: none;
 } 
 .nav li{ 
     margin-left: 40px;
-    list-style:none; 
     animation: nav .3s .5s ease-out forwards;  
 }
 .nav li a{

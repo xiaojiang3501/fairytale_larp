@@ -44,7 +44,8 @@ iframe{
     padding-top:30px;
 }
 .mail ul{
-    padding:10px 50px;    
+    padding:10px 50px;
+    list-style: none;    
 }
 .mail li{
     padding-bottom: 10px;

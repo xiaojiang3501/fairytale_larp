@@ -4,6 +4,7 @@
     width: 800px;
     margin: 100px auto;
     display: flex; 
+    list-style: none;
 }
  .process li{
     width: 180px; 

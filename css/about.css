@@ -26,6 +26,7 @@
 .introduce ul{
     display: flex;
     margin-bottom: 150px;
+    list-style: none;
 }
 .introduce li{
   width: 260px;
