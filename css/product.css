@@ -163,4 +163,9 @@ h4{
     .bottom{
         font-size: 12px;
     }
+    .bottom a{
+        padding:5px;
+        line-height:30px;
+        height:30px;
+    }
 }

@@ -6,7 +6,13 @@
     opacity: 0;
     transition: all 1.5s; 
 }
-
+.NAV_Wrapper{
+    display: none;
+    background-image: url(../img/index.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 /* banner */
 #canvasbg{
   position: fixed;
@@ -133,27 +139,36 @@ h1{
 
 /* 首頁_RWD */
 @media screen and (max-width:500px) {
+    .NAV_Wrapper{
+        display: block;
+        width: calc(100% - 20px);
+        box-sizing: border-box; 
+        width: 100vw;
+        height: 30vh;
+        object-fit: cover;
+    }
     #canvasbg{
         position: static;
         height:0;
         width: 0;
-        display: none;
+        perspective: none;
     }
     #ImgWrapper img{
-        width: 100vw;
-        height: 30vh;
+        display: none;
     }
     .main_play{
         width: calc(100% - 20px);
         box-sizing: border-box; 
-        margin-top: 200px; 
+        margin-top: 20px;
+        margin-bottom:0px; 
+        height: 80vh;
     }
     .title,.c,.d{
         opacity: 1;
     }
     .main_play h1{
         font-size: 30px;
-        margin: 0 auto 10px;
+        margin: 0px auto 50px;
     }
     .main_play h2{
         font-size:18px;
