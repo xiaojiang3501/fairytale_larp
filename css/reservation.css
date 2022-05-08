@@ -193,6 +193,7 @@ h1{
     background-color: brown;
     color: white;
     padding: 10px; 
+    transition: 0.5s;  
 }
 #item2:checked + .item2{
     display: block;
@@ -200,6 +201,7 @@ h1{
     background-color: brown;
     color: white;
     padding: 10px; 
+    transition: 0.5s;  
 }
 #item3:checked + .item3{
     display: block;
@@ -207,6 +209,7 @@ h1{
     background-color: brown;
     color: white;
     padding: 10px; 
+    transition: 0.5s;  
 }
 #btn{
     margin: 0 auto;
@@ -223,6 +226,7 @@ h1{
 }
 #btn:hover{
     transform: scale(1.05);
+    transition: 0.5s;  
 }
 /* 線上預約_RWD */
 @media screen and (max-width:500px) {

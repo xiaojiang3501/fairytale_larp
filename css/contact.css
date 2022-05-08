@@ -71,22 +71,23 @@ textarea{
 }
 .mail .bt{ 
     display: block;
-    width: 120px;
+    width: 130px;
     height: 40px;
     font-size: 24px;
     font-weight: bold;
-    background-color: white;
     border:0;
     cursor:pointer;
     border-radius: 5px;
     margin: 0 auto;
     color: #2B2C2A; 
-    border: #2B2C2A 3px solid;       
+    border: #2B2C2A 3px solid;
+    background-color: rgb(255, 255, 255,.4);       
 }
 .mail .bt:hover{
     background-color:#2B2C2A;
     color:white;
     border: white 3px solid; 
+    transition: 0.5s;  
 }
 
 /* 聯絡我們RWD */
