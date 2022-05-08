@@ -1,19 +1,20 @@
 $(function(){
     // 開啟 POPUP
-    $('#1').click(function(){
-      $('.mask1').css('display', 'block');
-    })
-    // 點擊 MASK 關閉 POPUP
-    $('.mask1').click(function(e){
-      $(this).removeAttr('style');
-      console.log(e.eventPhase);
-    })
-    $('.popup1').click(function(e){
-      e.stopPropagation();
-      // return false;
-      console.log(e.eventPhase);
-    })       
+  $('#1').click(function(){
+    $('.mask1').css('display', 'block');
+    
   })
+  // 點擊 MASK 關閉 POPUP
+  $('.mask1').click(function(e){
+    $(this).removeAttr('style');
+    console.log(e.eventPhase);
+  })
+  $('.popup1').click(function(e){
+    e.stopPropagation();
+    // return false;
+    console.log(e.eventPhase);
+  })       
+})
 
 $(function(){
   $('#2').click(function(){
