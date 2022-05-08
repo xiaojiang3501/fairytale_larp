@@ -1,9 +1,7 @@
 /* 首頁 */
 
-/* ::-webkit-scrollbar {
-    display: none;
-} */
 
+/* 標題 */
 .title,.c,.d{
     opacity: 0;
     transition: all 1.5s; 
@@ -141,17 +139,14 @@ h1{
         width: 0;
         display: none;
     }
-    #ImgWrapper{
-        perspective: none;
-    }
     #ImgWrapper img{
         width: 100vw;
-        height: 40vh;
+        height: 30vh;
     }
     .main_play{
         width: calc(100% - 20px);
         box-sizing: border-box; 
-        margin-top: 100px; 
+        margin-top: 200px; 
     }
     .title,.c,.d{
         opacity: 1;
@@ -168,23 +163,21 @@ h1{
     }
     .news{
         width: 100vw;
-        height: 100vh;
+        height: 40vh;
     }
     .news h1{
         font-size: 30px;
         margin: 0 auto 50px;
     }
     .news ul{
-        flex-wrap: wrap;
         width: 100vw;
     }
     .news li{
-        margin-bottom: 30px;
-        
+        margin-bottom: 30px;   
     }
     .news li img{
         filter: grayscale(0);
-        width: 60%;
+        width: 90%;
         display: block;
         margin: 0 auto;
     }

@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 //---------------------Landing Page ScrollTrigger---------------------
-if(window.innerWidth>500){function LandingPageScrollTrigger() {
+function LandingPageScrollTrigger() {
 
     gsap.to('body', { // LoadingAnimation---------------------
         opacity: 1, duration: 1.3
@@ -23,11 +23,12 @@ if(window.innerWidth>500){function LandingPageScrollTrigger() {
 
         .from('#codeby', { y : 130, opacity: 0 }, 0.31)
 }
-}
 //---------------------/Landing Page ScrollTrigger---------------------
 
 window.onload = () => {
+    if(window.innerWidth>500){
     LandingPageScrollTrigger()
+    }
 }
 
 // if(window.innerWidth>500px){
