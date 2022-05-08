@@ -144,7 +144,7 @@ h1{
         width: calc(100% - 20px);
         box-sizing: border-box; 
         width: 100vw;
-        height: 30vh;
+        height: 40vh;
         object-fit: cover;
     }
     #canvasbg{
