@@ -26,7 +26,7 @@
 #ImgWrapper img {
     position: absolute;
     width: 100vw;
-    object-fit:cover;
+    height: 100vh;
 }
 h1{
     font-size: 48px;
@@ -126,7 +126,6 @@ h1{
     -webkit-align-items: center;
     align-items: center;
 }
-
 .swiper-slide img {
     display: block;
     width: 100%;
@@ -145,10 +144,14 @@ h1{
     #ImgWrapper{
         perspective: none;
     }
+    #ImgWrapper img{
+        width: 100vw;
+        height: 40vh;
+    }
     .main_play{
         width: calc(100% - 20px);
         box-sizing: border-box; 
-        margin-top: 250px; 
+        margin-top: 100px; 
     }
     .title,.c,.d{
         opacity: 1;
