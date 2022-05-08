@@ -8,7 +8,7 @@ document.addEventListener('scroll', function(e) {
     if(window.scrollY >= 1300){
         document.getElementsByClassName("title")[1].style.opacity = 1;
     }
-    if(window.scrollY >= 200){
+    if(window.scrollY >=2000){
         document.getElementsByClassName("title")[2].style.opacity = 1;
     }
     if(window.scrollY >= 650){
