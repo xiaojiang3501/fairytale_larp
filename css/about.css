@@ -1,0 +1,128 @@
+/* 關於我們 */
+/* 上面 */
+.about{
+    background-image: url(../img/about.png);
+    width: 1200px;
+    height: 900px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 50px auto;
+
+    /* border: 1px solid white; */
+} 
+.about p{
+    width: 900px;
+    margin: auto;
+    font-size: 32px;
+    padding-top: 250px;
+}
+
+/* 中間介紹 */
+.introduce{
+    width: 1200px;
+    margin: 0 auto;
+}
+.introduce ul{
+    display: flex;
+    margin-bottom: 150px;
+    list-style: none;
+}
+.introduce li{
+  width: 260px;
+  margin-left: 20px;
+  margin: 0 auto;
+}
+.introduce img{
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+    width: 240px;
+    height: 270px;
+    clip-path: polygon(50% 0%, 0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%);
+}
+.introduce h1{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 36px;
+}
+.introduce p{
+    margin: 0 10px;
+    font-size: 24px;
+}
+.introduce h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* 影片 */
+.vedio{
+    display: flex;
+    margin-bottom: 100px;
+}
+.vedio1{
+    margin-right: 100px;
+}
+
+
+/* 關於我們_RWD */
+@media screen and (max-width:500px) {
+    .about{
+        width: 100%;
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+        background-image: none;
+        height:350px;
+    }
+    .about p{
+        width: 85vw;
+        font-size: 18px;
+        margin: 0 20px;
+        padding: 0;
+    } 
+    .introduce{
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+    }
+    .introduce ul{
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .introduce li{
+        margin-bottom: 50px;
+    }
+    .introduce img{
+        width: 90%;
+    }
+    .introduce h1{
+        padding-top:10px;   
+    }
+    .introduce h2{
+        margin-bottom: 20px;
+    }
+    .vedio{
+        flex-wrap: wrap;    
+    }
+    .vedio1,.vedio2{
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-bottom: 56.25%;
+        margin:0 0 50px 20px;
+    }
+    .vedio2{
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-bottom: 56.25%;
+    }
+    iframe{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+}

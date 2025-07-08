@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/LOGO.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/reservation.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- jQuery  -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    <!-- 月曆 -->
+    <link href="./css/jquery-ui.css" rel="stylesheet">
+    <title>線上預約</title>
+</head>
+<body>
+        <!-- nav -->
+        <nav class="nav">
+            <a href="index.html"><img src="./img/LOGO.png" alt="" /></a> 
+            <label>
+            <input type="checkbox">
+            <span class="menu"> <span class="hamburger"></span> </span>
+            <ul>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="news.html">最新消息</a></li>
+                <li><a href="product.html">劇本主題</a></li>
+                <li><a class="nav_yellow" href="reservation.html">線上預約</a></li>
+                <li><a href="Q&A.html">Q&A</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-user"></i>註冊/登入</a></li>
+            </ul>
+            </label>
+        </nav>
+    <!-- 上面流程 -->
+    <section class="process">
+        <ul>
+            <li data-aos="zoom-in-up">
+                <img src="./img/form.png" alt="">
+                <p>1.填寫訂單<br>選擇喜歡的劇本並進行下單
+                </p>
+            </li>
+            <li data-aos="zoom-in-up">
+                <img src="./img/user.png" alt="">
+                <p>2.登入帳號<br>若沒有帳號請先進行註冊
+
+                </p>
+            </li>
+            <li data-aos="zoom-in-up">
+                <img src="./img/pay.png" alt="">
+                <p>3.線上付款<br>選擇付款方式並付訂金
+
+                </p>
+            </li>
+            <li data-aos="zoom-in-up">
+                <img src="./img/email.png" alt="">
+                <p>4.信件通知<br>等待預約完成信件通知
+
+                </p>
+            </li>
+        </ul>
+
+    </section>    
+    <section class="cover">
+        <section class="reserve">
+            <form action="">
+                    <h1>姓名：</h1>
+                    <input type='text' id="re1">
+                    <h1>電話：</h1>
+                    <input type='tel' id="re1">
+                    <h1>信箱：</h1>
+                    <input type='email' id="re2">
+
+                    <h1>劇本主題:</h1>
+                    <select name="" id="se">
+                        <optgroup label="歡樂">
+                        <option value="">來電</option>
+                        <option value="">市井狂人</option>
+                        <option value="">吾皇在上</option>
+                        </optgroup>
+                        <optgroup label="情感">
+                            <option value="">奉天1928</option>
+                            <option value="">捨離</option>
+                            <option value="">古木吟</option>
+                        </optgroup>
+                        <optgroup label="陣營">
+                            <option value="">青樓</option>
+                            <option value="">津門遺雲</option>
+                            <option value="">龍宴</option>
+                        </optgroup>
+                        <optgroup label="恐怖">
+                            <option value="">新屋</option>
+                            <option value="">紙妻</option>
+                            <option value="">第二十二條校規</option>
+                        </optgroup>
+                        <optgroup label="硬核">
+                            <option value="">年輪</option>
+                            <option value="">虛擬遊戲</option>
+                            <option value="">漓川怪談簿</option>
+                        </optgroup>
+                    </select>
+
+                    <h1 class="demoHeaders">日期:</h1>
+                    <div id="datepicker"></div>
+
+                    <h1>場次:</h1>
+                    <div class="session">
+                        <input type="radio" name="1" id="item1">
+                        <label for="item1" class="item1">
+                            <h2>10:00~13:00</h2>
+                        </label>
+                        <input type="radio" name="1" id="item2">
+                        <label for="item2" class="item2">
+                            <h2>14:00~17:00</h2>
+                        </label>
+                        <input type="radio" name="1" id="item3">
+                        <label for="item3" class="item3">
+                            <h2>19:00~22:00</h2>
+                        </label>
+                    </div>
+                    <input type=" checkbox" value="前往預約" id="btn" >
+
+            </form>
+            <div class="c1">
+            <img src="./img/11.png" alt="">
+            </div>
+            <div class="c2">
+                <img src="./img/22.png" alt="">
+            </div>
+            <div class="c3">
+                <img src="./img/33.png" alt="">
+            </div>
+            <div class="c4">
+                <img src="./img/44.png" alt="">
+            </div>
+            <div class="c5">
+                <img src="./img/55.png" alt="">
+            </div>
+            <div class="c6">
+                <img src="./img/66.png" alt="">
+            </div>
+
+            <img src="./img/12345.png" class="plain" alt="">
+        </section>
+    </section>    
+ 
+    <!-- footer -->
+    <footer>
+        <section class="fo-top">
+        <article>
+            <h1>
+            童話故事LARP股份有限公司<br> 
+            台北市中山區南京東路三段219號5樓<br>
+            fairy_tale_larp@gmail.com<br>
+            (02)12345678
+            </h1>
+        </article>
+        <article class="fo_logo">
+            <a class="FB" href="https://www.facebook.com/"></a>
+            <a class="IG" href="https://www.instagram.com/"></a>
+
+        </article>
+        </section>
+
+        <article>
+            <p>本網站為緯育TibaMe前端設計工程師班第76期學員專題作品<br>
+                參考資源: 410檔案室、衛斯理LARP。
+            </p>
+        </article>
+    </footer>
+    <!-- 日期選擇器 -->
+    <script src="./JS/jquery.js"></script>
+    <script src="./JS/jquery-ui.js"></script>
+    <script>
+
+    $( "#datepicker" ).datepicker({
+        inline: true
+    });
+
+    // Hover states on the static widgets
+    $( "#dialog-link, #icons li" ).hover(
+        function() {
+            $( this ).addClass( "ui-state-hover" );
+        },
+        function() {
+            $( this ).removeClass( "ui-state-hover" );
+        }
+    );
+    </script>
+    <!-- javascript AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

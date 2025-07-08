@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/LOGO.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- jQuery  -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    <title>劇本主題</title>
+
+</head>
+<body>       
+        <!-- nav -->
+        <nav class="nav">
+            <a href="index.html"><img src="./img/LOGO.png" alt="" /></a> 
+            <label>
+            <input type="checkbox">
+            <span class="menu"> <span class="hamburger"></span> </span>
+            <ul>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="news.html">最新消息</a></li>
+                <li><a class="nav_yellow" href="product.html">劇本主題</a></li>
+                <li><a href="reservation.html">線上預約</a></li>
+                <li><a  href="Q&A.html">Q&A</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-user"></i>註冊/登入</a></li>
+            </ul>
+            </label>
+        </nav>
+    
+    <section class="product">
+            <!-- 上面 -->
+            <section class="type">
+                <h1>劇本主題類別</h1>
+                <div class="showcase-btn">
+                    <ul>
+                        <li data-filter="*">全部</li>
+                        <li data-filter=".joy">歡樂</li>
+                        <li data-filter=".emotion">情感</li>
+                        <li data-filter=".camp">陣營</li>
+                        <li data-filter=".horror">恐怖</li>
+                        <li data-filter=".hardcore">硬核</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- 下面 -->
+            <ul class="cases">
+                <li class="case-item emotion" id="1">
+                        <img src="./img/larp1.png" alt="">
+                        <h1>奉天1928</h1>
+                        <h2>情感/普通/5人</h2>
+                </li>
+                <li class="case-item hardcore" id="2">
+                        <img src="./img/larp2.png" alt="">
+                        <h1>年輪</h1>
+                        <h2>硬核/進階/5人</h2>
+                </li>
+                <li class="case-item joy" id="3">
+                        <img src="./img/larp3.png" alt="">
+                        <h1>來電</h1>
+                        <h2>歡樂/新手/6人</h2>
+                </li>
+                <li class="case-item emotion" id="4">
+                        <img src="./img/larp4.png" alt="">
+                        <h1>捨離</h1>
+                        <h2>情感/普通/6人</h2>
+                </li>
+                <li class="case-item horror" id="5">
+                        <img src="./img/larp5.png" alt="">
+                        <h1>新屋</h1>
+                        <h2>恐怖/普通/6人</h2>
+                </li>
+                <li class="case-item hardcore" id="6">
+                        <img src="./img/larp6.png" alt="">
+                        <h1>虛擬遊戲</h1>
+                        <h2>硬核/進階/6人</h2>
+                </li>
+                <li class="case-item emotion" id="7">
+                        <img src="./img/larp7.png" alt="">
+                        <h1>古木吟</h1>
+                        <h2>情感/普通/6人</h2>
+                </li>
+                <li class="case-item joy" id="8">
+                        <img src="./img/larp8.png" alt="">
+                        <h1>市井狂人</h1>
+                        <h2>歡樂/新手/7人</h2>
+                </li>
+                <li class="case-item camp" id="9">
+                        <img src="./img/larp9.png" alt="">
+                        <h1>青樓</h1>
+                        <h2>陣營/普通/7人</h2>
+                </li>
+                <li class="case-item hardcore" id="10">
+                        <img src="./img/larp10.png" alt="">
+                        <h1>漓川怪談簿</h1>
+                        <h2>硬核/進階/7人</h2>
+                </li>
+                <li class="case-item horror" id="11">
+                        <img src="./img/larp11.png" alt="">
+                        <h1>紙妻</h1>
+                        <h2>恐怖/進階/7人</h2>
+                </li>
+                <li class="case-item camp" id="12">
+                        <img src="./img/larp12.png" alt="">
+                        <h1>津門遺雲</h1>
+                        <h2>陣營/新手/7人</h2>
+                </li>
+                <li class="case-item horror" id="13">
+                        <img src="./img/larp13.png" alt="">
+                        <h1>第二十二條校規</h1>
+                        <h2>恐怖/普通/7人</h2>
+                </li>
+                <li class="case-item camp" id="14">
+                        <img src="./img/larp14.png" alt="">
+                        <h1>龍宴</h1>
+                        <h2>陣營/普通/8人</h2>
+                </li>
+                <li class="case-item joy" id="15">
+                        <img src="./img/larp15.png" alt="">
+                        <h1>吾皇在上</h1>
+                        <h2>歡樂/新手/9人</h2>
+                </li>
+            </ul>     
+    </section>
+    <section class="mask1" id="mask">
+            <section class="popup1" id="popup">
+                <div class="top">
+                <img src="./img/larp1.png" alt="">
+                    <div class="right">
+                        <h3>奉天1928</h3>
+                        <h4><i class="fa-solid fa-sack-dollar"></i>550/人<i class="fa-solid fa-clock"></i>240min</h4>
+                        <p>劇本類型：情感/民初
+                        <br> 
+                        遊戲難度：普通
+                        <br>
+                        遊戲角色：3男2女
+                        <br>
+                        能反串嗎：X
+                        <br>
+                        有換裝嗎：O
+                        </p>
+                    </div> 
+                </div>
+                <div class="bottom">
+                    <p>
+                        1919年，日本成立關東軍，勢力滲透東北三省。
+                        <br>
+                        1927年，關東軍向北洋政府索要鐵路控制權，在東北激起反日熱潮。
+                        <br>
+                        1928年，北伐軍逼近京津地區，北洋政府內憂外患，大帥堅持中國內政不容關東軍干涉，引起關東軍不滿。
+                        <br>
+                        同年5月，大帥帶著闖了禍的妹妹登上了從奉天開往南京的火車，同行的還有日本關東軍首領。
+                        <br>
+                        火車在黑夜中穿梭，烏雲蔽月，各自懷惴心思的乘客中，一場殺人案正在進行。
+                        <a href="./reservation.html">前往預約</a>
+                    </p>
+                </div>
+            </section>              
+    </section>
+    <section class="mask2" id="mask">
+        <section class="popup2" id="popup">
+            <div class="top">
+            <img src="./img/larp2.png" alt="">
+                <div class="right">
+                    <h3>年輪</h3>
+                    <h4><i class="fa-solid fa-sack-dollar"></i>550/人<i class="fa-solid fa-clock"></i>360min</h4>
+                    <p>劇本類型：硬核/還原
+                    <br> 
+                    遊戲難度：進階
+                    <br>
+                    遊戲角色：3男2女
+                    <br>
+                    能反串嗎：X
+                    <br>
+                    有換裝嗎：X
+                    </p>
+                </div> 
+            </div>
+            <div class="bottom">
+                <p>
+                    位於T市郊外160多公里，一座山谷內的廢墟，原先是一個僅有數十戶人口的小村，一天夜裡突發大火，由於谷內山路崎嶇且沒有外接水源導致救火工作極其困難，好在深凹的地形致使火勢沒有向外蔓延，天矇矇亮時火勢才漸漸熄滅。
+                    <br>
+                    那次大火對谷內石壁樹木造成了破壞，後來每每有風吹過時總能聽到鳴鳴的哭聲，彷彿是當年那些冤魂在為自己哭訴，外面通往山谷的地勢險峻再加上村子位置較為隱蔽，使得這些年來政府並沒有對這片廢墟進行修繕。
+                    <br>
+                    今天，一群人聚集到了這裡……
+                    <a href="./reservation.html">前往預約</a>
+                </p>
+            </div>
+        </section>              
+    </section>
+    <section class="mask3" id="mask">
+        <section class="popup3" id="popup">
+            <div class="top">
+            <img src="./img/larp3.png" alt="">
+                <div class="right">
+                    <h3>來電</h3>
+                    <h4><i class="fa-solid fa-sack-dollar"></i>500/人<i class="fa-solid fa-clock"></i>240min</h4>
+                    <p>劇本類型：歡樂/還原
+                    <br> 
+                    遊戲難度：新手
+                    <br>
+                    遊戲角色：3男3女
+                    <br>
+                    能反串嗎：O
+                    <br>
+                    有換裝嗎：X
+                    </p>
+                </div> 
+            </div>
+            <div class="bottom">
+                <p>
+                    當時代的步伐推動著人們前行時，彌留深淵之人，或如螻蟻被黃土湮沒，或如蛆蟲破土而出迎來新生。苟且偷生，安居一隅尚是世間常態，無數人做著一飛衝天的美夢，可夢醒時分，卻無人敢破夢而出，走向康莊大道。
+                    <br>
+                    蛆蟲不過寥寥，螻蟻才是世間人，等到日昇之時，把純潔和光明做成了面具，遮擋住黑夜裡探出的邪惡與野心後，參天大樹開始伸出茂密的枝葉，邪惡與野心踩著無數的根莖觸摸到陽光，無知散漫的落黃從枝頭抽離，歸於厚土。
+                    <br>
+                    沒人知曉大雨傾盆是喜還是難，就像沒人知曉與之相談甚歡的是人還是魔。蝸牛拔山涉水只為活著，飛鳥越過千山只為回家，連動物都積極的奔赴著生活，人也不例外。向陽而生是本性，當卸去所有的保護殼，唯一所見的便只有人心。
+                    <br>
+                    人心難測，人性易測；人性本善，人心⋯
+                    <a href="./reservation.html">前往預約</a>
+                </p>
+            </div>
+        </section>              
+    </section>
+    <section class="mask4" id="mask">
+        <section class="popup4" id="popup">
+            <div class="top">
+            <img src="./img/larp4.png" alt="">
+                <div class="right">
+                    <h3>捨離</h3>
+                    <h4><i class="fa-solid fa-sack-dollar"></i>650/人<i class="fa-solid fa-clock"></i>240min</h4>
+                    <p>劇本類型：情感/還原
+                    <br> 
+                    遊戲難度：普通
+                    <br>
+                    遊戲角色：3男3女
+                    <br>
+                    能反串嗎：X
+                    <br>
+                    有換裝嗎：O
+                    </p>
+                </div> 
+            </div>
+            <div class="bottom">
+                <p>
+                    三界之中，捨去萬念縱使成魔又如何？輪迴之外，離殤斷情身負血仇怎能忘⋯⋯
+                    <br>
+                    數萬年前，怨靈無寂荼毒妖界生靈，被萬妖王封印於昊天塔內，如今，無寂即將蓄滿怨力衝破封印。
+                    <br>
+                    六位主人公機緣巧合成了拯救妖界的希望，而他們的愛恨情仇在妖界大難面前又將走向何方？
+                    <br>
+                    是刻骨銘心之愛，還是挫骨揚灰之恨？也許都不重要了⋯⋯
+                    <br>
+                    此生，無悔。
+                    <a href="./reservation.html">前往預約</a>
+                </p>
+            </div>
+        </section>              
+    </section>
+    <section class="mask5" id="mask">
+        <section class="popup5" id="popup">
+            <div class="top">
+            <img src="./img/larp5.png" alt="">
+                <div class="right">
+                    <h3>新屋</h3>
+                    <h4><i class="fa-solid fa-sack-dollar"></i>600/人<i class="fa-solid fa-clock"></i>210min</h4>
+                    <p>劇本類型：恐怖/推理
+                    <br> 
+                    遊戲難度：普通
+                    <br>
+                    遊戲角色：2男4女
+                    <br>
+                    能反串嗎：O
+                    <br>
+                    有換裝嗎：O
+                    </p>
+                </div> 
+            </div>
+            <div class="bottom">
+                <p>
+                    新春佳節時蕭條的小區，不斷的吵鬧聲，熱氣騰騰的餃子，鬼影森森的廢墟，不斷響起的電話，嶄新的電視和老舊的收音機……
+                    <br>
+                    自從這一家人搬到了新房子以後，詭異的事情時常發生，丟失的孩子，疑神疑鬼的家人，每天夜裡那種奇怪的感覺，你相信這個世界真的有鬼嗎？
+                    <a href="./reservation.html">前往預約</a>
+                </p>
+            </div>
+        </section>              
+    </section>
+    <section class="mask6" id="mask">
+        <section class="popup6" id="popup">
+            <div class="top">
+            <img src="./img/larp6.png" alt="">
+                <div class="right">
+                    <h3>虛擬遊戲</h3>
+                    <h4><i class="fa-solid fa-sack-dollar"></i>550/人<i class="fa-solid fa-clock"></i>330min</h4>
+                    <p>劇本類型：硬核/科幻
+                    <br> 
+                    遊戲難度：進階
+                    <br>
+                    遊戲角色：3男3女
+                    <br>
+                    能反串嗎：O
+                    <br>
+                    有換裝嗎：X
+                    </p>
+                </div> 
+            </div>
+            <div class="bottom">
+                <p>
+                    2020年一場電子信息革命狂潮席捲全球，虛擬遊戲已成為全世界最主流的遊戲形式之一。藉此機會，革新這一技術的拓撲公司一躍成為全球頂尖的企業，幾乎每天都可以在新聞報導上看到它的身影。
+                    <br>
+                    說起拓撲公司的CEO華叔則顯得低調內斂，他幾乎不在公眾場合出現，偶爾的電視採訪也都是帶著面具，不以真面目示人。2020年8月15日是拓撲公司成立3週年的日子。華叔宣布將要在這天組織一場虛擬殺人遊戲，分為「偵探」和「兇手」兩種角色，讓玩家相互廝殺，勝者將會得到高達1000萬的獎勵。
+                    <br>
+                    最終7名幸運兒獲得了遊戲資格，他們將在林家別館展開最終的對決。然而，第一夜過去了，兇手在遊戲中完成殺人，眾人也回到現實討論案件時，卻意外發現——現實中竟然也有人死去。
+
+                    林家別館再起命案，命運交織的7人將會面臨怎樣的危險。凶宅是否會又一次吞噬這些人命？
+                    <br>
+                    穿越虛擬與現實的羈絆，不可思議的真相究竟在何處？
+                    <a href="./reservation.html">前往預約</a>
+                </p>
+            </div>
+        </section>              
+    </section>
+    <section class="mask7" id="mask">
+        <section class="popup7" id="popup">
+            <div class="top">
+            <img src="./img/larp7.png" alt="">
+                <div class="right">
+                    <h3>古木吟</h3>
+                    <h4><i class="fa-solid fa-sack-dollar"></i>600/人<i class="fa-solid fa-clock"></i>330min</h4>
+                    <p>劇本類型：情感/微恐
+                    <br> 
+                    遊戲難度：普通
+                    <br>
+                    遊戲角色：3男3女
+                    <br>
+                    能反串嗎：X
+                    <br>
+                    有換裝嗎：O
+                    </p>
+                </div> 
+            </div>
+            <div class="bottom">
+                <p>
+                    羌鎮，地處岷江西岸，有上千年的古文化的美麗小鎮，國家旅遊文化聖地。自古流傳炎帝在此嘗百草，鎮中銀杏皆有靈性的傳說。小鎮至今保有「火舞祭」的儀式，在朗歌坪中燃燒靈木，讓鎮民對銀杏古木的樹靈表示敬畏。
+                    <br>
+                    20世紀末，連續3年在火舞祭當天發生了居民舉家失蹤的謎案，火舞祭暫時擱置。數年後，火舞祭的習俗得以恢復，鎮上的春暉中學的六名學生卻在火舞祭當天突然失去意識，醒來後在校舍看到了不可思議的景象……
+                    <br>
+                    這個校舍，已經瘋了……
+                    <br>
+                    晦暗的陰雲壓在頭頂，校門口被斷木封死，圍欄外被亂石掩埋。
+                    <br>
+                    樹林白髮老婦、篝火大頭娃娃……裝在盒中的斷頭女、抵住柵門的血手印……明明沒有老師在的教室，學生卻紛紛望著講台記起了筆記；明明沒有管理員的宿舍，一顆顆頭顱與頭髮在迴廊中滾動……操場附近，幼童尖笑聲迴盪；教學大樓，學生接連的消失；保健室內，陳放許久的屍體突然動了起來。幽暗的走廊燈如亡靈嘆息，將倖存者的影子指向校園中庭的古木。
+                    <a href="./reservation.html">前往預約</a>
+                </p>
+            </div>
+        </section>              
+    </section>
+    <section class="mask8" id="mask">
+        <section class="popup8" id="popup">
+            <div class="top">
+            <img src="./img/larp8.png" alt="">
+                <div class="right">
+                    <h3>市井狂人</h3>
+                    <h4><i class="fa-solid fa-sack-dollar"></i>500/人<i class="fa-solid fa-clock"></i>210min</h4>
+                    <p>劇本類型：歡樂/撕逼
+                    <br> 
+                    遊戲難度：新手
+                    <br>
+                    遊戲角色：5男2女
+                    <br>
+                    能反串嗎：X
+                    <br>
+                    有換裝嗎：X
+                    </p>
+                </div> 
+            </div>
+            <div class="bottom">
+                <p>
+                    大隱隱於市，小小鴻興村臥虎藏龍，是騙子的天堂，強者的擂台，奸人的王國。
+                    <br>
+                    魚龍混雜的菜市場，市井狂人競相爭鋒，平平無奇的包子舖，深夜上演絕命武技；熱氣騰騰的洗澡堂，忽而乍現索命魅影；暗流湧動的理髮店，推理大師深藏不露；菜市場旁的小酒吧，衣冠禽獸指點江山。
+                    <br>
+                    是神仙打架，也是刁民亂鬥；是利益爭奪，也是市井百態。
+                    <br>
+                    直到某一天，神秘開發商攜打手前來，一場大戰一觸即發，不論烏龍糗事，還是陰謀詭計，都將昭然若示，而隱藏數十年的恩怨糾葛，也將揭開⋯⋯
+                    <a href="./reservation.html">前往預約</a>
+                </p>
+            </div>
+        </section>              
+    </section>
+    <section class="mask9" id="mask">
+        <section class="popup9" id="popup">
+            <div class="top">
+            <img src="./img/larp9.png" alt="">
+                <div class="right">
+                    <h3>青樓</h3>
+                    <h4><i class="fa-solid fa-sack-dollar"></i>550/人<i class="fa-solid fa-clock"></i>330min</h4>
+                    <p>劇本類型：陣營/還原
+                    <br> 
+                    遊戲難度：普通
+                    <br>
+                    遊戲角色：4男3女
+                    <br>
+                    能反串嗎：X
+                    <br>
+                    有換裝嗎：O
+                    </p>
+                </div> 
+            </div>
+            <div class="bottom">
+                <p>
+                    隋末天下群雄並起，公元617年唐國公於晉陽起兵，憑藉一方至寶「混元石」的力量，打敗了高句麗，打敗突厥，安定了吐蕃，並繼續開拓西域，直到中亞，可謂萬國來朝。次年，唐國公稱帝建立大唐王朝，以長安為京師，響名「長安城」⋯⋯
+                    <br>
+                    說起這「混元石」，它乃這世間極凶之物，同時也是一把雙刃劍，擁有強大力量的同時，也會吞噬主人的心血，輕則喪命，重則七魂破散，不過自從大唐王朝建立以後，這「混元石」也是再也沒有現過世，本該遭其反噬的唐國公如今也是依然健好，似乎是利用了某種神奇之力，將體內的極惡之氣散去，這事在如今大唐宮中乃是口禁，這「混元石」如今到底去了哪裡，世人們都是面面皆問。
+                    <br>
+                    再到後來，唐朝也是歌舞盛華之朝，樂文取得了輝煌之成，同時也將女伎們的身價推向了巔峰，青樓之市火爆，歌舞伎成了熱門之業，雖然淪落為青樓女子並不光彩，但依然有很多人選擇這一職業。
+                    <br>
+                    在這些女子中琴棋書畫兼備的也大有人在⋯⋯在長安城內，其一等之青樓——玉滿樓，別名「玉月滿花」，此中之女子皆是琴棋書畫兼備，相傳吶！那都是賣藝不賣身的存在。
+                    <br>
+                    我們的故事就要從這玉滿樓開始說起。
+                    <a href="./reservation.html">前往預約</a>
+                </p>
+            </div>
+        </section>              
+    </section>
+    <section class="mask10" id="mask">
+        <section class="popup10" id="popup">
+            <div class="top">
+            <img src="./img/larp10.png" alt="">
+                <div class="right">
+                    <h3>漓川怪談簿</h3>
+                    <h4><i class="fa-solid fa-sack-dollar"></i>550/人<i class="fa-solid fa-clock"></i>270min</h4>
+                    <p>劇本類型：硬核/玄幻
+                    <br> 
+                    遊戲難度：進階
+                    <br>
+                    遊戲角色：3男4女
+                    <br>
+                    能反串嗎：O
+                    <br>
+                    有換裝嗎：O
+                    </p>
+                </div> 
+            </div>
+            <div class="bottom">
+                <p>
+                    「常世」是這片土地的名字，也是土地中心那片詭異湖泊的名字。
+                    <br>
+                    傳說，這裡的水土，不僅滋養了生活在這的百姓，也孕育出了無數怪談故事中的精怪們。
+                    <br>
+                    它們非人非鬼，是受到常世湖湖水影響而妖異化的產物，它們也不像話本裡傳的那樣天生邪惡，大多只是生活的方式還有對世界的認知，與人類不同而已，但只要它們出現，就一定離不開各種「光怪陸離」。
+                    <br>
+                    在這片湖泊的中心，還有著一個叫做「蜃氣樓」的建築，像一艘大船，徹徹底底地懸於湖上，漁夫們曾潛入水中查看，卻找不到任何一根用以支撐的柱子，不管水位因為天氣如何變化，它始終都會和水面保持著固定的距離。大家都對蜃氣樓感到好奇，卻沒人能夠真的進去。
+                    <br>
+                    所有人都知道，那裡是平將門大人的居所，早就下令，禁止任何人的通行。
+                    <br>
+                    但今天，睜開雙眼後，你們忽然發現自己居然正身處在這棟神秘的建築裡，而平將門大人則慘死在了他緊鎖的房間當中⋯⋯
+                    <a href="./reservation.html">前往預約</a>
+                </p>
+            </div>
+        </section>              
+    </section>
+    <section class="mask11" id="mask">
+        <section class="popup11" id="popup">
+            <div class="top">
+            <img src="./img/larp11.png" alt="">
+                <div class="right">
+                    <h3>紙妻</h3>
+                    <h4><i class="fa-solid fa-sack-dollar"></i>550/人<i class="fa-solid fa-clock"></i>270min</h4>
+                    <p>劇本類型：恐怖/民初
+                    <br> 
+                    遊戲難度：進階
+                    <br>
+                    遊戲角色：4男3女
+                    <br>
+                    能反串嗎：X
+                    <br>
+                    有換裝嗎：O
+                    </p>
+                </div> 
+            </div>
+            <div class="bottom">
+                <p>
+                    民國年間，苦難的中華大地山河破碎，戰火紛飛。距離上海不足百里的清河縣也難以逃脫被動蕩的時局摧殘的命運。
+                    <br>
+                    城鎮西邊的山坡上矗立著一座古老的宅院，曾經氣勢恢宏，富麗堂皇，如今車馬冷落，終年被濃霧環繞，散發出陰森的鬼氣。宅子的現任主人姓陳，是二十四年前慘絕人寰的蜀中陳家寨瘟疫的唯一倖存者。
+                    <br>
+                    但僥倖逃生似乎用光了陳家全部運氣，自從搬來這裡，陳家便怪事不斷，接二連三的姨太太離奇失踪、一場莫名的大火幾乎毀掉陳家基業、一個個幽深的夜裡宅子傳出淒厲歌聲——那歌聲像是女鬼的哀嚎，一聲聲唱著：娃娃眼，娃娃眼，抬起頭，望著天。娃娃的眼睛晶晶亮，娃娃的眼睛似蜜甜。挖一隻娃娃眼，神不知來鬼不覺，吃下一口娃娃眼，九泉下來相見……
+                    <br>
+                    六月十五的夜晚，突然雷鳴電閃，狂風暴雨。這座古宅，一夜之間成為了盤踞中原幾大勢力的交鋒之所。因一場婚禮而聚集在此的七個人，各自心懷鬼胎，蟄伏多年的異端宗教蠢蠢欲動，塵封已久的齷齪秘密大白於天，讓人談之色變的恐怖瘟疫再次襲來。
+                    <a href="./reservation.html">前往預約</a>
+                </p>
+            </div>
+        </section>              
+    </section>
+    <section class="mask12" id="mask">
+        <section class="popup12" id="popup">
+            <div class="top">
+            <img src="./img/larp12.png" alt="">
+                <div class="right">
+                    <h3>津門遺雲</h3>
+                    <h4><i class="fa-solid fa-sack-dollar"></i>50/人<i class="fa-solid fa-clock"></i>180min</h4>
+                    <p>劇本類型：陣營/民初
+                    <br> 
+                    遊戲難度：新手
+                    <br>
+                    遊戲角色：4男3女
+                    <br>
+                    能反串嗎：O
+                    <br>
+                    有換裝嗎：O
+                    </p>
+                </div> 
+            </div>
+            <div class="bottom">
+                <p>
+                    民國初年的天津，金浩之老爺由米行起家，至今已成知名富商。
+                    <br>
+                    而隨著老爺重病臥床，鉅額財產也被家中子女及兒媳們覬覦。
+                    <br>
+                    昨晚，突然傳來了金浩之老爺暴斃身亡的消息，然而找不到遺囑、加上遺留下的百萬銀元，使家中成員們各懷鬼胎……
+                    <a href="./reservation.html">前往預約</a>
+                </p>
+            </div>
+        </section>              
+    </section>
+    <section class="mask13" id="mask">
+        <section class="popup13" id="popup">
+            <div class="top">
+            <img src="./img/larp13.png" alt="">
+                <div class="right">
+                    <h3>第二十二條校規</h3>
+                    <h4><i class="fa-solid fa-sack-dollar"></i>550/人<i class="fa-solid fa-clock"></i>240min</h4>
+                    <p>劇本類型：恐怖/校園
+                    <br> 
+                    遊戲難度：普通
+                    <br>
+                    遊戲角色：4男3女
+                    <br>
+                    能反串嗎：O
+                    <br>
+                    有換裝嗎：O
+                    </p>
+                </div> 
+            </div>
+            <div class="bottom">
+                <p>
+                    現在是深夜凌晨2:00，往日人聲鼎沸的學校裡此刻充滿寂靜，陰冷的月光照在一個個無人的教室中，給黑夜平添上了一分詭異感。
+                    <br>
+                    教學樓一共有6層，此時5樓某個教室中，―個人影悄悄的打開了教室的門，然後小心翼翼的觀察著周圍的走廊，良久，這個人影似乎鬆了口氣，輕輕的走出去並關上教室的門，似是在極力避免發出聲音。
+                    <br>
+                    突然「他」渾身一抖，似乎感應到了什麼一樣，立刻朝著走廊的一邊狂奔，看到樓梯後「他」飛速向下跑，正想一口氣衝下一樓時，「他」突然在樓梯口停了下來，接著頭也不回的轉身朝二樓跑去，樓梯下面似乎有什麼非常恐怖的東西在等著「他」一樣。
+                    <br>
+                    終於「他」累了跑不動了，「他」在走廊盡頭找到了一間教室，便趕忙衝了進去想要躲一躲，但是打開門的瞬間，「他」的臉色瞬間變得慘白，眼睛直勾勾的看著眼前難以置信的一幕，隨後，死寂的校園中傳出了一聲淒厲的慘叫⋯⋯
+                    <a href="./reservation.html">前往預約</a>
+                </p>
+            </div>
+        </section>              
+    </section>
+    <section class="mask14" id="mask">
+        <section class="popup14" id="popup">
+            <div class="top">
+            <img src="./img/larp14.png" alt="">
+                <div class="right">
+                    <h3>龍宴</h3>
+                    <h4><i class="fa-solid fa-sack-dollar"></i>600/人<i class="fa-solid fa-clock"></i>270min</h4>
+                    <p>劇本類型：陣營/古風
+                    <br> 
+                    遊戲難度：普通
+                    <br>
+                    遊戲角色：5男3女
+                    <br>
+                    能反串嗎：O
+                    <br>
+                    有換裝嗎：O
+                    </p>
+                </div> 
+            </div>
+            <div class="bottom">
+                <p>
+                    新皇韓淳登基之後，力推改革，卻遭到了貴族明裏暗裏的反對。
+                    <br>
+                    而江湖上有一個欲推翻皇朝的幫派叫做弒龍幫，讓本就風雨飄搖的皇朝又增加了危機。
+                    <br>
+                    適逢皇帝壽辰，大擺宴席，龍宴之後，朝堂危機四伏……
+                    <br>
+                    既已入世，你我皆是棋子。
+                    <a href="./reservation.html">前往預約</a>
+                </p>
+            </div>
+        </section>              
+    </section>
+    <section class="mask15" id="mask">
+        <section class="popup15" id="popup">
+            <div class="top">
+            <img src="./img/larp15.png" alt="">
+                <div class="right">
+                    <h3>吾皇在上</h3>
+                    <h4><i class="fa-solid fa-sack-dollar"></i>650/人<i class="fa-solid fa-clock"></i>270min</h4>
+                    <p>劇本類型：歡樂/宮鬥
+                    <br> 
+                    遊戲難度：新手
+                    <br>
+                    遊戲角色：5男4女
+                    <br>
+                    能反串嗎：O
+                    <br>
+                    有換裝嗎：O
+                    </p>
+                </div> 
+            </div>
+            <div class="bottom">
+                <p>
+                    南唐天禧二年，新帝李諳登基伊始，大赦天下，百姓安居樂業，風調雨順，雖有個別宵小作亂，但難成大器。
+                    <br>
+                    去年十月，皇帝選妃，各方秀女爭奇鬥艷，其中有張家姊妹雙雙獲得青睞，聯袂入宮。
+                    <br>
+                    姐姐溫柔可人，溫文爾雅，獨得聖寵。妹妹卻因活潑好動，口不擇言被皇帝厭惡，深鎖冷宮。
+                    <br>
+                    今年二月，咖妃有孕，龍顏大悅，更為寵愛，甚至有傳聞欲立咖妃為后。好景不常，時至六月二九，咖妃突然小產，失血過多亡故。
+                    <br>
+                    今天是八月初一，皇帝突然召集眾人，說昨夜得咖妃託夢，深感咖妃之死有異，決定徹查。
+                    <a href="./reservation.html">前往預約</a>
+                </p>
+            </div>
+        </section>              
+    </section>
+    
+    <!-- footer -->
+    <footer>
+        <section class="fo-top">
+        <article>
+            <h1>
+            童話故事LARP股份有限公司<br> 
+            台北市中山區南京東路三段219號5樓<br>
+            fairy_tale_larp@gmail.com<br>
+            (02)12345678
+            </h1>
+        </article>
+        <article class="fo_logo">
+            <a class="FB" href="https://www.facebook.com/"></a>
+            <a class="IG" href="https://www.instagram.com/"></a>
+
+        </article>
+        </section>
+
+        <article>
+            <p>本網站為緯育TibaMe前端設計工程師班第76期學員專題作品<br>
+                參考資源: 410檔案室、衛斯理LARP。
+            </p>
+        </article>
+    </footer>
+    
+    <!-- javascript -->
+    <!-- 篩選 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+        var $grid = $('.cases').isotope({
+        // options
+        });
+        // filter items on button click
+        $('.showcase-btn').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        });
+    </script>
+
+    <!-- popup -->
+    <script src="./JS/product.js"></script>
+
+</body>
+</html>

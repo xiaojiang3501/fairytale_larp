@@ -1,0 +1,288 @@
+/* 線上預約 */
+/* 上面流程 */
+.process ul{
+    width: 800px;
+    margin: 100px auto;
+    display: flex; 
+    list-style: none;
+}
+ .process li{
+    width: 180px; 
+    padding: 10px; 
+} 
+.process img{
+    display: block;
+   
+}
+.process p{
+    padding:20px;
+    font-size: 18px;
+}
+
+/* 背景 */
+.cover{
+    position: relative;
+    width: 800px;
+    height: 1000px;
+    margin: 100px auto ;
+    overflow: hidden;
+    color: white;
+}
+.cover:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-shadow:0 0 50px 50px black inset;
+}
+.plain{
+    width: 800px;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    z-index: 0;
+}
+.c1{
+    position: absolute;
+    animation: c1 15s 4s  linear infinite;
+    left: -200px;
+    top:50px;
+}
+.c2{
+    position: absolute;
+    animation: c2 15s 1s linear infinite;
+    left: -200px;
+    top:100px;
+}
+.c3{
+    position: absolute;
+    animation: c3 15s 6s linear infinite;
+    left: -200px;
+    top:200px;
+}
+.c4{
+    position: absolute;
+    animation: c4 15s 10s linear infinite;
+    left: -200px;
+    top:300px;
+}
+.c5{
+    position: absolute;
+    animation: c5 15s 15s linear infinite;
+    left: -200px;
+    top:400px;
+}
+.c6{
+    position: absolute;
+    animation: c6 15s 8s linear infinite;
+    left: -200px;
+    top:450px;
+}
+
+/* 雲動畫 */
+@keyframes c1{
+	0%{
+		left: -200px;
+	}
+	100%{
+		left: 800px;
+	}
+}
+@keyframes c2{
+	0%{
+		left: -200px;
+	}
+	100%{
+		left: 800px;
+	}
+}
+@keyframes c3{
+	0%{
+		left: -200px;
+	}
+	100%{
+		left: 800px;
+	}
+}
+@keyframes c4{
+	0%{
+		left: -200px;
+	}
+	100%{
+		left: 800px;
+	}
+}
+@keyframes c5{
+	0%{
+		left: -200px;
+	}
+	100%{
+		left: 800px;
+	}
+}
+@keyframes c6{
+	0%{
+		left: -200px;
+	}
+	100%{
+		left: 800px;
+	}
+}
+
+/* 表單 */
+form{
+    padding: 50px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+}
+h1{
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bolder;
+}
+#re1{
+    opacity: .7;
+    width: 200px;
+    border-radius: 10px;
+    padding: 5px;
+}
+#re2{
+    opacity: .7;
+    width: 400px;
+    border-radius: 10px;
+    padding: 5px;
+}
+#se{
+    opacity: .7;
+    width: 220px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+.session{
+    display: flex;
+    padding-bottom: 60px;
+}
+#item1,#item2,#item3{
+    display: none;   
+}
+.item1,.item2,.item3{
+    font-size:20px;
+    display: block;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px; 
+    margin-right: 20px;
+    background-color: #E37728; 
+    color: white; 
+    text-align: center; 
+}
+.item1 h2{
+    align-items: center;
+}
+#item1:checked + .item1{
+    display: block;
+    border-radius: 20px;
+    background-color: brown;
+    color: white;
+    padding: 10px; 
+    transition: 0.5s;  
+}
+#item2:checked + .item2{
+    display: block;
+    border-radius: 20px;
+    background-color: brown;
+    color: white;
+    padding: 10px; 
+    transition: 0.5s;  
+}
+#item3:checked + .item3{
+    display: block;
+    border-radius: 20px;
+    background-color: brown;
+    color: white;
+    padding: 10px; 
+    transition: 0.5s;  
+}
+#btn{
+    margin: 0 auto;
+    display: block;
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 30px;
+    background-color: brown;
+    color: white;
+    border:0;
+    cursor:pointer;
+    text-align: center;
+}
+#btn:hover{
+    transform: scale(1.05);
+    transition: 0.5s;  
+}
+/* 線上預約_RWD */
+@media screen and (max-width:500px) {
+    .process{
+        width: 100%;
+    }
+    .process ul{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .process li{
+        margin-left: 0;
+        height: auto;
+        width: calc(100% - 40px);
+        box-sizing: border-box;
+        margin: 0 auto 20px auto;
+    }
+    .process img{
+        float: left;
+        width: 100px;
+        margin-left: 10px;
+    }
+    .process h3{
+        font-size: 28px;
+        text-align: left;
+        margin-left: 110px;
+    }
+    .process p{
+        margin-left: 110px;
+    }
+    .cover{
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+        margin: 0 10px 50px;
+    }
+    form{
+        width: 100%;
+        padding: 0;
+    }
+    .plain{
+        width: 100%;
+    }
+    #re2{
+         width: 80vw;
+    }
+    .session{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .item1,.item2,.item3{
+        width: 150px;
+        margin-bottom: 20px;
+    }
+    #btn{
+        margin: 0;
+        width:120px; 
+    }
+}
+      

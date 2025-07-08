@@ -1,0 +1,229 @@
+/* 首頁 */
+
+
+/* 標題 */
+.title,.c,.d{
+    opacity: 0;
+    transition: all 1.5s; 
+}
+.NAV_Wrapper{
+    display: none;
+    background-image: url(../img/index.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/* banner */
+#canvasbg{
+  position: fixed;
+  z-index: 1;
+  width: 100%; 
+  height: 100%;
+}
+#ImgWrapper { 
+    position: relative;
+    overflow: hidden; 
+    /* border: 1px solid blue; */
+    perspective: 2200px; 
+}
+
+#ImgWrapper img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* 遊戲玩法 */
+#codeby{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/play.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0 -250px 500px #000 inset;
+}
+.main_play{
+    width: 1000px;
+    margin-bottom: 100px;
+}
+.main_play h1{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-shadow:3px 3px 3px black;
+}
+.main_play h2{
+    font-size: 32px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    text-shadow:3px 3px 3px black;
+}
+.main_play p{
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow:3px 3px 3px black;
+}
+
+/* 首頁最新消息 */
+.news{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+#scene{
+    position: absolute;
+    top:-170px;
+    left: 60px;
+    z-index: -10;
+}
+.news h1{
+    margin: 150px auto 100px;
+ }
+.news ul{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+}
+.news li{
+    width: 300px;
+    margin: 0 auto;
+}
+.news ul img{
+    width: 100%;
+    filter: grayscale(80%);
+}
+.news ul img:hover{
+    filter: grayscale(0);
+
+}
+
+/* 熱門主題 */
+.hot h1{
+    margin: 100px auto 100px;
+ }
+.swiper {
+    width: 60%;
+    height: 100%;
+    margin: 100px auto ;
+ }
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 首頁_RWD */
+@media screen and (max-width:500px) {
+    .NAV_Wrapper{
+        display: block;
+        width: calc(100% - 20px);
+        box-sizing: border-box; 
+        width: 100vw;
+        height: 40vh;
+        object-fit: cover;
+    }
+    #canvasbg{
+        position: static;
+        height:0;
+        width: 0;
+        perspective: none;
+    }
+    #ImgWrapper img{
+        display: none;
+    }
+    .main_play{
+        width: calc(100% - 20px);
+        box-sizing: border-box; 
+        margin-top: 20px;
+        margin-bottom:0px; 
+        height: 80vh;
+    }
+    .title,.c,.d{
+        opacity: 1;
+    }
+    .main_play h1{
+        font-size: 30px;
+        margin: 0px auto 50px;
+    }
+    .main_play h2{
+        font-size:18px;
+    }
+    .main_play p{
+        font-size:12px;
+    }
+    .news{
+        width: 100vw;
+        height: 40vh;
+    }
+    .news h1{
+        font-size: 30px;
+        margin: 0 auto 50px;
+    }
+    .news ul{
+        width: 100vw;
+    }
+    .news li{
+        margin-bottom: 30px;   
+    }
+    .news li img{
+        filter: grayscale(0);
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    .hot h1{
+        font-size: 30px;
+        margin: 0 auto 50px;
+    }
+    #scene{
+        display: none;
+    } 
+    .swiper{
+        width: 100vw;
+        margin: 20px auto 100px;
+    }
+}
+
+/* nav */
+.nav{    
+    z-index: 5;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    animation: nav .3s .5 s ease-out forwards;   
+    justify-content: space-evenly;       
+}
+@media screen and (max-width:500px){
+    .nav{
+        width: 100%;
+        animation-play-state: paused;
+        position: static;
+        justify-content: space-between;  
+    }
+}

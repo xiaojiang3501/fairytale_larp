@@ -1,0 +1,123 @@
+@import url('reset.css');
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+}
+body{
+    height: 100vh;
+    background-color:black;
+    font-family: Arial,;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+/* 內容 */
+.login_out{
+    display: flex;
+    flex-direction: column;
+}
+.login_out img{
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+    margin-top:100px;
+}
+.shell{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    perspective:1000px ;
+}
+.top{
+    width: 300px;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-evenly;
+}
+.off,.on{
+    color: white;
+    transition: .5s;
+    font:300 20px "";
+}
+.on{
+    opacity: .5;
+}
+.button{
+    width: 55px;
+    height: 25px;
+    background-color:#d0bc9f;
+    border-radius: 20px;
+    position: relative;
+}
+.ball{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color:#F4AD41 ;
+    border-radius:50%;
+    transition: .5s;
+    box-shadow: 0 0 10px black;
+    left: 0;
+    transform: translate(-1px);
+}
+.bottom{
+    width: 300px;
+    height: 300px;
+    background-color: #2B2C2A;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: .7s;
+    border-radius: 5px;
+}
+
+.bottom>div{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;    
+}
+
+.bottom>div h2{
+    color: white;
+}
+.bottom>div input{
+    width: 200px;
+    height: 25px;
+    padding: 0 10px;
+    background-color: #f0dec3;
+    color: black;
+}
+.bottom>div button{
+    width: 80px;
+    height: 30px;
+    color: #333;
+    font-size: 15px;
+    background-color: #f0dec3;
+    border-radius: 5px;
+    transition: .3s;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.bottom>div button:hover{
+    box-shadow: 0 0 20px #b09366;
+}
+.signIN{
+    transform: translateZ(70px);
+}
+.signUP{
+    position: absolute;
+    top: 0;
+    transform: translateZ(-70px) rotateY(180deg);
+}
+
+/* LOGIN_RWD */
+@media screen and (max-width:500px) {
+    
+}

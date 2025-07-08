@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/LOGO.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/common.css">  
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- jQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>童話故事LARP</title>
+
+</head>
+<body>    
+    <!-- nav -->
+    <nav class="nav">
+        <a href="index.html"><img src="./img/LOGO.png" alt="" /></a> 
+        <label>
+        <input type="checkbox">
+        <span class="menu"> <span class="hamburger"></span> </span>
+        <ul>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="news.html">最新消息</a></li>
+            <li><a href="product.html">劇本主題</a></li>
+            <li><a href="reservation.html">線上預約</a></li>
+            <li><a href="Q&A.html">Q&A</a></li>
+            <li><a href="contact.html">聯絡我們</a></li>
+            <li><a href="login.html"><i class="fa-solid fa-user"></i>註冊/登入</a></li>
+        </ul>
+        </label>
+    </nav>    
+    <!-- NAV_Wrapper -->
+    <div class="NAV_Wrapper"></div>
+    <!-- Wrapper -->
+    <div id="ImgWrapper"> 
+        <canvas id='canvasbg' class="star_effect" ></canvas>       
+        <img id="img" src="./img/index.jpg" alt=""> 
+            <div id="codeby">
+                    <!-- 玩法 -->  
+                    <article class="main_play">
+                        <h1 class="title">遊戲玩法</h1>
+
+                        <h2 class="c">1.閱讀劇本</h2>
+                            <p class="d">每位玩家會獲得各自獨一無二的角色劇本，仔細閱讀故事背景及人物設定後，將在整場遊戲中，根據劇情內容扮演並成為該角色。</p>
+                        <h2  class="c">2.自我介紹</h2>
+                            <p class="d">讀完劇本後，遊戲主持人會帶領玩家正式開場，玩家需做簡單的角色自我介紹，重新認識彼此的身份及關係。</p>
+                        <h2  class="c">3.搜索線索</h2>
+                            <p class="d">隨著故事劇情的推進，會開始出現各種不同的突發事故或犯罪事件，而玩家將會圍繞著這些謎團進行調查，獲得更多案件的線索及資訊。</p>
+                        <h2  class="c">4.推理緝凶</h2>
+                            <p class="d">玩家透過調查得到的資訊，彼此相互討論釐清疑點，適時地利用一些談話交易，完成個人角色需要隱瞞或是解開的事實真相。</p>
+                        <h2  class="c"> 5.還原真相</h2>
+                            <p class="d">最後玩家將指認案件的真兇，成功失敗與否將會導向不同的故事結局，而後遊戲主持人會公開事件真相，說明並還原整個劇情的完整內容，結束這次的劇本推理遊戲。</p>
+                    </article>   
+
+            </div>
+        </div>
+        <!-- 最新消息 -->
+        <section class="news">           
+            <h1 class="title">最新消息</h1>       
+            <ul>
+                <li><a  href="news.html"><img src="./img/HB.png" alt=""></a></li>
+                <li><a  href="news.html"><img src="./img/ST.png" alt=""></a></li>
+                <li><a  href="news.html"><img src="./img/PD.png" alt=""></a></li>
+            </ul>
+            <section id="scene">
+                <div class="s1" data-depth="0.2"><img src="./img/s1.png" alt=""></div>
+                <div class="s2" data-depth="-0.2"><img src="./img/s2.png" alt=""></div>
+                <div class="s3" data-depth="0.2"><img src="./img/s3.png" alt=""></div>
+                <div class="s4" data-depth="-0.2"><img src="./img/s4.png" alt=""></div>
+                <div class="s5" data-depth="0.2"><img src="./img/s5.png" alt=""></div>
+                <div class="s6" data-depth="-0.2"><img src="./img/s6.png" alt=""></div>
+                <div class="s7" data-depth="0.2"><img src="./img/s7.png" alt=""></div>
+                <div class="s8" data-depth="-0.2"><img src="./img/s8.png" alt=""></div>
+                </section>
+        </section>
+            <!-- 熱門主題 -->
+            <section class="hot">
+                <h1 class="title">熱門主題</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/larp7.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/larp10.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/larp5.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/larp1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/larp4.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/larp14.png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+    <!-- footer -->
+    <footer>
+        <section class="fo-top">
+        <article>
+            <h1>
+            童話故事LARP股份有限公司<br> 
+            台北市中山區南京東路三段219號5樓<br>
+            fairy_tale_larp@gmail.com<br>
+            (02)12345678
+            </h1>
+        </article>
+        <article class="fo_logo">
+            <a class="FB" href="https://www.facebook.com/"></a>
+            <a class="IG" href="https://www.instagram.com/"></a>
+
+        </article>
+        </section>
+
+        <article>
+            <p>本網站為緯育TibaMe前端設計工程師班第76期學員專題作品<br>
+                參考資源: 410檔案室、衛斯理LARP。
+            </p>
+        </article>
+    </footer>
+
+    
+    <!----------------------------------------------------javascript--------------------------------------------------->
+    <!-- scroll -->
+    <script src="./JS/scroll.js"></script>
+    <!-- gsap-latest-beta.min.js -->
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426'></script>
+    <!-- ScrollTrigger.min.js -->
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js'></script>
+    <script src="./JS/wrapper.js"></script>
+    <script src="./JS/light.js"></script>
+    <!-- Parallax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+      var scene = document.getElementById('scene');
+      var parallaxInstance = new Parallax(scene);
+    </script>
+
+    <!-- Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          freeMode: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+            autoplay: {
+            delay: 3000, // 3秒切換一次
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+            },
+        });
+      </script> 
+  
+</body>
+</html>

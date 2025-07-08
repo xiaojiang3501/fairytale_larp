@@ -1,0 +1,164 @@
+ /* 聯絡我們 */
+.contact_out{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;  
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.contact{
+    width:600px;
+    background-color: #2B2C2A;
+}
+.con_main,.map{
+    margin-left: 80px; 
+}
+.contact h1{
+    color:#F4AD41;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    font-size: 30px;
+}
+.contact p{
+    font-size: 24px;
+    padding-bottom: 100px;  
+}
+iframe{
+    width:85%;
+    height: 300px;
+    border:0;
+}
+
+/* 寄信給我們 */
+.mail{
+    background-image: url(../img/contact.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 600px;
+}
+.mail h2{
+    font-size: 40px;
+    text-align: center;
+    padding-top:30px;
+}
+.mail ul{
+    padding:10px 50px;
+    list-style: none;    
+}
+.mail li{
+    padding-bottom: 10px;
+    width: 400px;
+    margin: 0 auto; 
+}
+.mail h3{
+    font-size: 24px;
+    padding: 5px;
+}
+.in{
+    opacity: .7;
+    width: 380px;
+    height: 15px;
+    padding: 10px;    
+}
+textarea{
+    opacity: .7;
+    width: 380px;
+    height:350px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.mail .bt{ 
+    display: block;
+    width: 130px;
+    height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    border:0;
+    cursor:pointer;
+    border-radius: 5px;
+    margin: 0 auto;
+    color: #2B2C2A; 
+    border: #2B2C2A 3px solid;
+    background-color: rgb(255, 255, 255,.4);       
+}
+.mail .bt:hover{
+    background-color:#2B2C2A;
+    color:white;
+    border: white 3px solid; 
+    transition: 0.5s;  
+}
+
+/* 聯絡我們RWD */
+@media screen and (max-width:500px) {
+    .contact_out {
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+        margin: 0 10px;
+        flex-direction: column; 
+    }    
+    .contact{
+        width:300px;
+        margin: 0 auto 50px;
+        padding: 20px;        
+    }
+    .contact h1{
+        font-size:20px;
+        padding-top: 50px;
+        padding-bottom: 50px; 
+        text-align: center;
+    }
+    .contact p{
+        font-size:15px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    .con_main,.map{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    iframe{
+        width:98%;
+        padding-bottom: 100px;
+    }
+
+     /* 寄信給我們 */
+    .mail{
+        width:350px;
+        padding: 0;
+        margin:0 auto 100px;   
+    }
+    .mail h2{
+        font-size:20px;
+        padding-top: 10px;
+    }
+    .mail h3{
+        font-size:15px;
+        padding:0;
+    }
+    .mail ul{
+        padding:0;
+    }
+    .mail li{
+        width:240px;
+        padding: 0;
+    }
+    .in{
+        width:90%;
+        height: 8px;
+    }
+    textarea{
+        height: 180px;
+        margin:0;
+        width:90%;
+    }
+    .mail .bt{   
+        width: 100px; 
+        font-size:18px;
+        height: 30px;
+        margin-bottom: 10px;  
+    }
+}

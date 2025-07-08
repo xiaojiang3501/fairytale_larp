@@ -1,0 +1,171 @@
+/* 劇本主題 */
+.product{
+    margin: 50px auto;
+    width: 1200px;
+    padding-bottom: 100px;
+}
+/* 上面 */
+.type{
+    width: 700px;
+    margin: 0 auto;
+}
+.type h1{
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+}
+.showcase-btn{
+    text-align: center;
+    padding: 10px;
+}
+.showcase-btn ul li{
+    list-style: none;
+    display:inline-block;
+    background-color: #F4AD41;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 25px;
+}
+.showcase-btn li:hover{
+    background-color: #E37728;
+}
+.showcase-btn li:checked{
+    background-color: #E37728;
+}
+
+/* 下面 */
+.cases{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.case-item{
+    width: 200px;
+    padding: 10px;  
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #2B2C2A;
+    border-radius: 10px;   
+}
+.case-item img{
+    width: 100%;   
+}
+.case-item:hover {
+    transform: scale(1.05);
+}
+
+/* popup */
+#mask{
+    color: black;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+#popup{
+    width: 370px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.2);
+    flex-direction: column;
+  }
+#popup img{
+      width: 150px;
+      margin-right: 15px;
+}
+.top{
+    display: flex;
+    margin-bottom: 10px;
+}
+.fa-sack-dollar,.fa-clock{
+    margin: 5px;
+}
+h3{
+    font-size: 22px;
+    font-weight: bolder;
+}
+h4{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.right p{
+    font-size: 16px;
+}
+.bottom{
+    font-size: 14px;
+}
+.bottom a{
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    float: right;
+}
+.bottom a:hover{
+    transform: scale(1.05);
+}
+
+/* 劇本主題_RWD */
+@media screen and (max-width:500px) {
+    .product{
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+        margin: 0 10px;
+    }
+    .type{
+        width: 100%;
+    }
+    .showcase-btn ul li{
+        margin: 5px auto 10px;
+    }
+   .cases{
+       width: 80%;
+   }
+    .case-item{
+        width: 30vw;
+        margin: 5px;
+        font-size: 15px;
+    }
+    #popup{
+        width: 300px;
+    }
+    .fa-sack-dollar,.fa-clock{
+        margin: 2px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 15px;
+    }
+    .right p{
+        font-size: 14px;
+    }
+    .bottom{
+        font-size: 12px;
+    }
+    .bottom a{
+        padding:5px;
+        line-height:30px;
+        height:30px;
+    }
+}
